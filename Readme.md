@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Федор Дыдыкин](https://up.htmlacademy.ru/htmlcss/21/user/175413).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Масленко](https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 
