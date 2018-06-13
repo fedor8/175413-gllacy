@@ -165,9 +165,40 @@
     <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
       <img src="img/logo-htmlacademy-small.svg" width="108px" height="39px">
     </a>
-    <p>Сделано в <a class="htmlacademy">HTML Academy</a> © 2017</p>
+    <p>Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
   </div>
 </footer>
+
+<section class="basket">
+  <table class="basket-data">
+    <tr class="visually-hidden">
+      <th>Элементы управления</th>
+      <th>Изображение мороженого</th>
+      <th>Название мороженого</th>
+      <th>Цена и вес</th>
+      <th>Общая сумма</th>
+    </tr>
+    <tr class="basket-data__row">
+      <td class="basket-data__controls-column">TODO</td>
+      <td class="basket-data__image-column">TODO</td>
+      <td class="basket-data__icecream-name-column">Пломбир с апельсиновым джемом</td>
+      <td class="basket-data__price-andweight-column">1,5 кг х <span class="basket-data__price-for-kilogram">200 руб.</span></td>
+      <td class="basket-data__total-price-column">300 руб.</td>
+    </tr>
+    <tr class="basket-data__row">
+      <td class="basket-data__controls-column">TODO</td>
+      <td class="basket-data__image-column">TODO</td>
+      <td class="basket-data__icecream-name-column">Клубничный пломбир с присыпкой  из белого шоколада</td>
+      <td class="basket-data__price-andweight-column">1,5 кг х <span class="basket-data__price-for-kilogram">300 руб.</span></td>
+      <td class="basket-data__total-price-column">450 руб.</td>
+    </tr>
+  </table>
+  <div class="basket__total-sum-container">
+    <span class="basket__total-sum-label">Итого:</span>
+    <span class="basket__total-sum">750 руб.</span>
+  </div>
+  <button type="button" class="button basket__button">Оформить заказ</button>
+</section>
 
 </body>
 </html>

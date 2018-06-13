@@ -122,13 +122,16 @@
 
     <section class="blog-news">
       <p class="blog-news__header">Новое в нашем блоге</p>
-      <h3 class="blog-news__main-content"><a href="#" class="blog-news__link">10 способов сервировки фруктовых щербетов к столу</h3>
+      <h3 class="blog-news__main-content"><a href="#" class="blog-news__link">10 способов сервировки фруктовых щербетов к столу</a></h3>
     </section>
 
     <section class="subscribe">
-      <p class="subscribe__content">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе вс</p>
-      <!-- input TODO -->
-      <button  type="submit" class="subscribe__button">Отправить</button>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="subscribe__content">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+        <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+        <input id="subscribe-email" name="email" type="email" placeholder="Электронная почта" class="input"/>
+        <button type="submit" class="button subscribe__button">Отправить</button>
+      </form>
     </section>
 
     <section class="map"></section>
@@ -148,11 +151,45 @@
     </ul>
     <div class="made-by-info">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="108px" height="39px">
+        <img src="img/logo-htmlacademy-small.svg" width="108px" height="39px" alt="Логотип HTML Academy">
       </a>
-      <p>Сделано в <a class="htmlacademy">HTML Academy</a> © 2017</p>
+      <p>Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </div>
   </footer>
+
+  <section class="search">
+    <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="search-query">Что ищем?</label>
+      <input id="search-query" name="query" type="text" placeholder="Что ищем?" class="input"/>
+      <button type="submit" class="visually-hidden">Найти</button>
+    </form>
+  </section>
+
+  <section class="login">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="login-email">Электронная почта</label>
+      <input id="login-email" name="email" type="email" placeholder="Электронная почта" class="input"/>
+      <label class="visually-hidden" for="login-password">Пароль</label>
+      <input id="login-password" name="password" type="password" placeholder="Пароль" class="input"/>
+      <button type="submit" class="button login__submit-button">Войти</button>
+      <a href="#" class="login__restore-password-link">Забыли пароль?</a>
+      <a href="#" class="login__registration-link">Новая регистрация</a>
+    </form>
+  </section>
+
+  <section class="feedback">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="feedback-your-name">Как вас зовут?</label>
+      <input id="feedback-your-name" name="userName" type="text" placeholder="Как вас зовут?" class="input feedback__your-name-input"/>
+      <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+      <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" class="input feedback__email-input"/>
+      <label class="visually-hidden" for="feedback-text">Напишите что-нибудь...</label>
+      <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь..." class="textarea feedback__textarea"></textarea>
+      <button type="submit" class="button feedback__submit-button">Отправить</button>
+      <a href="#" class="login__restore-password-link">Забыли пароль?</a>
+      <a href="#" class="login__registration-link">Новая регистрация</a>
+    </form>
+  </section>
 
   </body>
 </html>
