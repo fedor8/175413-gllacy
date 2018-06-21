@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Глейси</title>
 </head>
 <body>
@@ -137,13 +140,17 @@
 
   <div class="catalog-navigation">
     <ul>
-      <li class="catalog-navigation__item catalog-navigation__item--back"><a class="catalog-navigation__link">Назад</a></li>
-      <li class="catalog-navigation__item catalog-navigation__item--current"><a class="catalog-navigation__link">1</a></li>
+      <li class="catalog-navigation__item catalog-navigation__item--back"><a class="catalog-navigation__link">Назад</a>
+      </li>
+      <li class="catalog-navigation__item catalog-navigation__item--current"><a class="catalog-navigation__link">1</a>
+      </li>
       <li class="catalog-navigation__item"><a href="#" class="catalog-navigation__link">2</a></li>
       <li class="catalog-navigation__item"><a href="#" class="catalog-navigation__link">3</a></li>
       <li class="catalog-navigation__item"><a href="#" class="catalog-navigation__link">4</a></li>
       <li class="catalog-navigation__item"><a href="#" class="catalog-navigation__link">5</a></li>
-      <li class="catalog-navigation__item catalog-navigation__item--forward"><a href="#" class="catalog-navigation__link">Вперед</a></li>
+      <li class="catalog-navigation__item catalog-navigation__item--forward">
+        <a href="#" class="catalog-navigation__link">Вперед</a>
+      </li>
     </ul>
   </div>
 
@@ -151,9 +158,11 @@
 <footer class="main-footer">
   <ul class="social-links">
     <li class="social-links__item"><a href="#" class="social-links__link social-links__link--twitter">Twitter</a></li>
-    <li class="social-links__item"><a href="#" class="social-links__link social-links__link--instagram">Instagram</a></li>
+    <li class="social-links__item"><a href="#" class="social-links__link social-links__link--instagram">Instagram</a>
+    </li>
     <li class="social-links__item"><a href="#" class="social-links__link social-links__link--facebook">Facebook</a></li>
-    <li class="social-links__item"><a href="#" class="social-links__link social-links__link--vkontakte">Vkontakte</a></li>
+    <li class="social-links__item"><a href="#" class="social-links__link social-links__link--vkontakte">Vkontakte</a>
+    </li>
   </ul>
   <ul class="other-links">
     <li class="other-links__item"><a href="#" class="other-links__link">Для поставщиков</a></li>
@@ -171,6 +180,8 @@
 
 <section class="basket">
   <table class="basket-data">
+    <thead><tr><td colspan="5" class="visually-hidden"><h2>Выбранные товары</h2></td></tr></thead>
+    <tbody>
     <tr class="visually-hidden">
       <th>Элементы управления</th>
       <th>Изображение мороженого</th>
@@ -179,25 +190,39 @@
       <th>Общая сумма</th>
     </tr>
     <tr class="basket-data__row">
-      <td class="basket-data__controls-column">TODO</td>
-      <td class="basket-data__image-column">TODO</td>
-      <td class="basket-data__icecream-name-column">Пломбир с апельсиновым джемом</td>
-      <td class="basket-data__price-andweight-column">1,5 кг х <span class="basket-data__price-for-kilogram">200 руб.</span></td>
-      <td class="basket-data__total-price-column">300 руб.</td>
+      <td class="controls-column"><a href="#" class="delete-button">Удалить</a></td>
+      <td class="image-column">
+        <img src="img/icecream1.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада"></td>
+      <td class="icecream-name-column"><h3>Пломбир с апельсиновым джемом</h3></td>
+      <td class="price-and-weight-column">1,5 кг х <span
+        class="price-for-kilogram">200 руб.</span></td>
+      <td class="total-price-column">300 руб.</td>
     </tr>
     <tr class="basket-data__row">
-      <td class="basket-data__controls-column">TODO</td>
-      <td class="basket-data__image-column">TODO</td>
-      <td class="basket-data__icecream-name-column">Клубничный пломбир с присыпкой  из белого шоколада</td>
-      <td class="basket-data__price-andweight-column">1,5 кг х <span class="basket-data__price-for-kilogram">300 руб.</span></td>
-      <td class="basket-data__total-price-column">450 руб.</td>
+      <td class="controls-column"><a href="#" class="delete-button">Удалить</a></td>
+      <td class="image-column">
+        <img src="img/icecream3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
+      <td class="icecream-name-column"><h3>Клубничный пломбир с присыпкой из белого шоколада</h3></td>
+      <td class="price-andweight-column">1,5 кг х <span
+        class="price-for-kilogram">300 руб.</span></td>
+      <td class="total-price-column">450 руб.</td>
     </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="5" class="basket__total-sum-container">
+        <span class="basket__total-sum-label">Итого:</span>
+        <span class="basket__total-sum">750 руб.</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5" class="basket__button-container">
+        <button type="button" class="button basket__button">Оформить заказ</button>
+      </td>
+    </tr>
+
+    </tfoot>
   </table>
-  <div class="basket__total-sum-container">
-    <span class="basket__total-sum-label">Итого:</span>
-    <span class="basket__total-sum">750 руб.</span>
-  </div>
-  <button type="button" class="button basket__button">Оформить заказ</button>
 </section>
 
 </body>

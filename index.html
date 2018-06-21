@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -128,8 +131,7 @@
     <section class="subscribe">
       <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="subscribe__content">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-        <input id="subscribe-email" name="email" type="email" placeholder="Электронная почта" class="input"/>
+        <input id="subscribe-email" name="email" type="email" placeholder="Электронная почта" class="input">
         <button type="submit" class="button subscribe__button">Отправить</button>
       </form>
     </section>
@@ -159,35 +161,27 @@
 
   <section class="search">
     <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden" for="search-query">Что ищем?</label>
-      <input id="search-query" name="query" type="text" placeholder="Что ищем?" class="input"/>
+      <input id="search-query" name="query" type="text" placeholder="Что ищем?" class="input">
       <button type="submit" class="visually-hidden">Найти</button>
     </form>
   </section>
 
   <section class="login">
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden" for="login-email">Электронная почта</label>
-      <input id="login-email" name="email" type="email" placeholder="Электронная почта" class="input"/>
-      <label class="visually-hidden" for="login-password">Пароль</label>
-      <input id="login-password" name="password" type="password" placeholder="Пароль" class="input"/>
+      <input id="login-email" name="email" type="email" placeholder="Электронная почта" class="input">
+      <input id="login-password" name="password" type="password" placeholder="Пароль" class="input">
       <button type="submit" class="button login__submit-button">Войти</button>
-      <a href="#" class="login__restore-password-link">Забыли пароль?</a>
-      <a href="#" class="login__registration-link">Новая регистрация</a>
+      <a href="#" class="text-link">Забыли пароль?</a>
+      <a href="#" class="text-link">Новая регистрация</a>
     </form>
   </section>
 
   <section class="feedback">
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden" for="feedback-your-name">Как вас зовут?</label>
-      <input id="feedback-your-name" name="userName" type="text" placeholder="Как вас зовут?" class="input feedback__your-name-input"/>
-      <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
-      <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" class="input feedback__email-input"/>
-      <label class="visually-hidden" for="feedback-text">Напишите что-нибудь...</label>
-      <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь..." class="textarea feedback__textarea"></textarea>
+      <input id="feedback-your-name" name="userName" type="text" placeholder="Как вас зовут?" class="input feedback__your-name-input">
+      <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" class="input feedback__email-input">
+      <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь&hellip;" class="textarea feedback__textarea"></textarea>
       <button type="submit" class="button feedback__submit-button">Отправить</button>
-      <a href="#" class="login__restore-password-link">Забыли пароль?</a>
-      <a href="#" class="login__registration-link">Новая регистрация</a>
     </form>
   </section>
 
