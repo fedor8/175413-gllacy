@@ -6,7 +6,8 @@ body {
 }
 
 a{
-  text-decoration: underline;
+  text-decoration: none;
+  background-image: linear-gradient(to top, #98ada1 1px, transparent 1px);
   color: rgb(255, 255, 255);
 }
 
@@ -31,7 +32,8 @@ a{
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.125;
-  text-decoration: underline;
+  text-decoration: none;
+  background-image: linear-gradient(to top, #98ada1 1px, transparent 1px);
 }
 
 .catalog-menu{
@@ -213,7 +215,8 @@ a.search-button{
   color: rgb(53, 53, 53);
   font-weight: bold;
   line-height: 1.25;
-  text-decoration: underline;
+  text-decoration: none;
+  background-image: linear-gradient(to top, #98ada1 1px, transparent 1px);
 }
 .subscribe__content {
   font-size: 16px;
@@ -316,4 +319,7 @@ a.search-button{
   color: rgb(50, 50, 50);
   font-weight: bold;
   line-height: 1.2;
+}
+.htmlacademy-link{
+  background-image: none;
 }
