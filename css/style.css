@@ -78,6 +78,7 @@ a.catalog-menu__header{
   text-decoration: none;
   display: block;
   padding: 10px 20px;
+  background-image: none;
 }
 
 .catalog-menu__item--current a{
