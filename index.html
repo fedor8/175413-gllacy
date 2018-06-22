@@ -14,9 +14,9 @@
       <img src="img/logo.svg" class="logo" width="154" height="64" alt="Магазин по продаже мороженого собственного производства «Глэйси»">
       <ul class="main-menu">
         <li class="main-menu__item">
-          <span class="catalog-menu__header">Каталог</span>
+          <a class="catalog-menu__header">Каталог</a>
           <ul class="catalog-menu">
-            <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Новинки</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link catalog-menu__link--current">Новинки</a></li>
             <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Сливочное</a></li>
             <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Щербеты</a></li>
             <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Фруктовый лед</a></li>
@@ -153,7 +153,7 @@
     </ul>
     <div class="made-by-info">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="108px" height="39px" alt="Логотип HTML Academy">
+        <img src="img/logo-htmlacademy-small.svg" width="120px" height="39px" alt="Логотип HTML Academy">
       </a>
       <p>Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </div>
@@ -161,7 +161,7 @@
 
   <section class="search">
     <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-      <input id="search-query" name="query" type="text" placeholder="Что ищем?" class="input">
+      <input id="search-query" name="query" type="search" placeholder="Что ищем?" class="input">
       <button type="submit" class="visually-hidden">Найти</button>
     </form>
   </section>

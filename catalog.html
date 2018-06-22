@@ -15,9 +15,9 @@
                               alt="Магазин по продаже мороженого собственного производства «Глэйси»"></a>
     <ul class="main-menu">
       <li class="main-menu__item">
-        <span class="catalog-menu__header">Каталог</span>
+        <a class="catalog-menu__header">Каталог</a>
         <ul class="catalog-menu">
-          <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Новинки</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link catalog-menu__link--current">Новинки</a></li>
           <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Сливочное</a></li>
           <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Щербеты</a></li>
           <li class="catalog-menu__item"><a href="catalog.html" class="catalog-menu__link">Фруктовый лед</a></li>
@@ -172,57 +172,35 @@
   </ul>
   <div class="made-by-info">
     <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy-small.svg" width="108px" height="39px">
+      <img src="img/logo-htmlacademy-small.svg" width="120px" height="39px">
     </a>
     <p>Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
   </div>
 </footer>
 
 <section class="basket">
-  <table class="basket-data">
-    <thead><tr><td colspan="5" class="visually-hidden"><h2>Выбранные товары</h2></td></tr></thead>
-    <tbody>
-    <tr class="visually-hidden">
-      <th>Элементы управления</th>
-      <th>Изображение мороженого</th>
-      <th>Название мороженого</th>
-      <th>Цена и вес</th>
-      <th>Общая сумма</th>
-    </tr>
-    <tr class="basket-data__row">
-      <td class="controls-column"><a href="#" class="delete-button">Удалить</a></td>
-      <td class="image-column">
-        <img src="img/icecream1.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада"></td>
-      <td class="icecream-name-column"><h3>Пломбир с апельсиновым джемом</h3></td>
-      <td class="price-and-weight-column">1,5 кг х <span
-        class="price-for-kilogram">200 руб.</span></td>
-      <td class="total-price-column">300 руб.</td>
-    </tr>
-    <tr class="basket-data__row">
-      <td class="controls-column"><a href="#" class="delete-button">Удалить</a></td>
-      <td class="image-column">
-        <img src="img/icecream3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
-      <td class="icecream-name-column"><h3>Клубничный пломбир с присыпкой из белого шоколада</h3></td>
-      <td class="price-andweight-column">1,5 кг х <span
-        class="price-for-kilogram">300 руб.</span></td>
-      <td class="total-price-column">450 руб.</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-      <td colspan="5" class="basket__total-sum-container">
+  <div class="basket-row">
+    <a href="#" class="delete-button">Удалить</a>
+    <img src="img/icecream1.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада">
+    <h3>Пломбир с апельсиновым джемом</h3>
+    <div class="price-and-weight">1,5 кг &times; <span class="price-for-kilogram">200 руб.</span></div>
+    <div class="total-price">300 руб.</div>
+  </div>
+  <div class="basket-row">
+    <a href="#" class="delete-button">Удалить</a>
+    <img src="img/icecream3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+    <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
+    <div class="price-and-weight">1,5 кг &times; <span class="price-for-kilogram">300 руб.</span></div>
+    <div class="total-price">450 руб.</div>
+  </div>
+
+    <div class="basket-footer">
+      <div class="basket-footer__total-sum">
         <span class="basket__total-sum-label">Итого:</span>
         <span class="basket__total-sum">750 руб.</span>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="5" class="basket__button-container">
-        <button type="button" class="button basket__button">Оформить заказ</button>
-      </td>
-    </tr>
-
-    </tfoot>
-  </table>
+      </div>
+      <button type="button" class="button basket__button">Оформить заказ</button>
+    </div>
 </section>
 
 </body>
