@@ -66,7 +66,7 @@ a.catalog-menu__header{
 
 }
 
-.catalog-menu__item a:hover, .catalog-menu__item a:focus, .catalog-menu__item a:active{
+.catalog-menu__item a[href]:hover, .catalog-menu__item a[href]:focus, .catalog-menu__item a[href]:active{
   background-color: rgb(251, 222, 216);
 }
 .catalog-menu__item a{
