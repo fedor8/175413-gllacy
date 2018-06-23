@@ -12,24 +12,25 @@
   <header class="main-header">
     <nav class="main-navigation">
       <img src="img/logo.svg" class="logo" width="154" height="64" alt="Магазин по продаже мороженого собственного производства «Глэйси»">
-      <ul class="main-menu">
+      <ul class="main-menu reset-list">
         <li class="main-menu__item">
-          <a class="catalog-menu__header">Каталог</a>
-          <ul class="catalog-menu">
-            <li class="catalog-menu__item catalog-menu__item--current"><a>Новинки</a></li>
-            <li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
-            <li class="catalog-menu__item"><a href="catalog.html">Щербеты</a></li>
-            <li class="catalog-menu__item"><a href="catalog.html">Фруктовый лед</a></li>
-            <li class="catalog-menu__item"><a href="catalog.html">Мелорин</a></li>
+          <a class="main-menu__link catalog-menu__header">Каталог</a>
+          <ul class="catalog-menu reset-list">
+            <li class="catalog-menu__item"><a class="catalog-menu__link catalog-menu__link--important" href="catalog.html">Новинки</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Сливочное</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Щербеты</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Фруктовый лед</a></li>
+            <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Мелорин</a></li>
           </ul>
+          </div>
         </li>
-        <li class="main-menu__item"><a href="delivery-and-payment.html">Доставка и оплата</a></li>
-        <li class="main-menu__item"><a href="about.html">О Компании</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="delivery-and-payment.html">Доставка и оплата</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="about.html">О Компании</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li class="search-starter"><a href="#" class="search-button">Поиск</a></li>
-        <li class="entrance-starter"><a href="#" class="">Вход</a></li>
-        <li class="cart-starter"><a href="#" class="">Пусто</a></li>
+      <ul class="user-navigation reset-list">
+        <li class="search-starter"><a href="#" class="user-navigation__link search-button">Поиск</a></li>
+        <li class="entrance-starter"><a href="#" class="user-navigation__link">Вход</a></li>
+        <li class="cart-starter"><a href="#" class="user-navigation__link">Пусто</a></li>
       </ul>
       <div class="short-info">
         <p class="short-info__working-hours">С 10 до 20, ежедневно</p>
@@ -40,7 +41,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Магазин по продаже мороженого собственного производства «Глэйси»</h1>
 
-    <ul class="gallery">
+    <ul class="gallery reset-list">
       <li class="gallery__content page-1-content">
         <h2 class="galery__title">Крем-брюле и пломбир с малиновым джемом</h2>
         <a href="#" class="gallery__link">Давайте оба!</a>
@@ -115,7 +116,7 @@
 
     <article class="block-about">
       <p class="block-about__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-      <ul class="block-about__content">
+      <ul class="block-about__content reset-list">
         <li class="block-about__item block-about__item--1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
         <li class="block-about__item block-about__item--2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
         <li class="block-about__item block-about__item--3">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
@@ -139,21 +140,21 @@
     <section class="map"></section>
   </main>
   <footer class="main-footer">
-    <ul class="social-links">
+    <ul class="social-links reset-list">
       <li class="social-links__item social-links__item--twitter"><a href="#">Twitter</a></li>
       <li class="social-links__item social-links__item--instagram"><a href="#">Instagram</a></li>
       <li class="social-links__item social-links__item--facebook"><a href="#">Facebook</a></li>
       <li class="social-links__item social-links__item--vkontakte"><a href="#">Vkontakte</a></li>
     </ul>
-    <ul class="other-links">
-      <li class="other-links__item other-links__item--suppliers"><a href="#">Для поставщиков</a></li>
-      <li class="other-links__item"><a href="#">О производстве</a></li>
-      <li class="other-links__item"><a href="#">Наши документы</a></li>
-      <li class="other-links__item"><a href="#">Экологические стандарты</a></li>
+    <ul class="other-links reset-list">
+      <li class="other-links__item other-links__item--suppliers"><a class="other-links__link" href="#">Для поставщиков</a></li>
+      <li class="other-links__item"><a class="other-links__link" href="#">О производстве</a></li>
+      <li class="other-links__item"><a class="other-links__link" href="#">Наши документы</a></li>
+      <li class="other-links__item"><a class="other-links__link" href="#">Экологические стандарты</a></li>
     </ul>
     <div class="made-by-info">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="120px" height="39px" alt="Логотип HTML Academy">
+        <img src="img/logo-htmlacademy-small.svg" width="120" height="39" alt="Логотип HTML Academy">
       </a>
       <p class="made-by-info__text">Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </div>

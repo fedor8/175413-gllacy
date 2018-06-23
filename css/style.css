@@ -1,14 +1,16 @@
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.375;
+  color: #FFFFFF;
   background-color: #849d8f;
 }
 
 a{
   text-decoration: none;
   background-image: linear-gradient(to top, #98ada1 1px, transparent 1px);
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
 }
 
 .visually-hidden {
@@ -27,170 +29,144 @@ a{
   overflow: hidden;
 }
 
-.main-menu__item a{
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+.main-menu__link{
+  font-weight: 700;
   line-height: 1.125;
-  text-decoration: none;
-  background-image: linear-gradient(to top, #98ada1 1px, transparent 1px);
 }
 
 .catalog-menu{
   display: inline-block;
-  flex-direction: column;
-  align-items: baseline;
-
-  border-radius: 5px;
-  background-color: rgb(248, 247, 244);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 0;
 }
 
-a.catalog-menu__header{
-  font-size: 16px;
-  color: rgb(50, 50, 50);
-  font-weight: bold;
+.catalog-menu__header{
+  color: #323232;
+  font-weight: 700;
   line-height: 1.143;
-  text-decoration: none;
 }
 
-.catalog-menu__item:first-child a{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.catalog-menu__link[href]:hover, .catalog-menu__link[href]:focus, .catalog-menu__item a[href]:active{
+  background-color: #FBDED8;
 }
-
-.catalog-menu__item:last-child a{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-
-}
-
-.catalog-menu__item a[href]:hover, .catalog-menu__item a[href]:focus, .catalog-menu__item a[href]:active{
-  background-color: rgb(251, 222, 216);
-}
-.catalog-menu__item a{
+.catalog-menu__link{
   font-size: 14px;
   font-weight: normal;
-  color: rgb(50, 50, 50);
-  background-color: rgb(248, 247, 244);
+  color: #323232;
+  background-color: #F8F7F4;
   line-height: 1.143;
-  text-decoration: none;
   display: block;
   padding: 10px 20px;
   background-image: none;
 }
 
-.catalog-menu__item--current a{
-  font-weight: bold;
+.catalog-menu__item:first-child .catalog-menu__link{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.catalog-menu__item:last-child .catalog-menu__link{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.catalog-menu li,
-.main-menu li,
-.user-navigation li,
-.social-links li,
-.other-links li,
-.navigation-route li,
-.catalog-navigation li,
-.block-about__content li,
-.gallery li{
+
+.catalog-menu__header{
+  background-image: none;
+}
+
+.catalog-menu__link--important{
+  font-weight: 700;
+  background-image: linear-gradient(to top, transparent 6px, #d1d0ce 6px, #d1d0ce 7px, transparent 7px);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  background-position: 50%;
+  padding-bottom: 20px;
+}
+
+.catalog-menu__link--current{
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.reset-list li{
   list-style-type: none;
 }
 
-.user-navigation a{
+.user-navigation__link{
   font-size: 14px;
   line-height: 1.143;
 }
 
-a.filled-cart{
-  color: rgb(50, 50, 50);
+.filled-cart{
+  color: #323232;
 }
-a.search-button{
+.search-button{
   font-size: 0;
 }
 
 .short-info__working-hours{
   font-size: 14px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.143;
 }
 
 .short-info__phone-number{
   font-size: 22px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.091;
-}
-.short-info__phone-number a{
-  text-decoration: none;
 }
 
 .galery__title {
   font-size: 60.468px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
-  color: rgb(255, 255, 255);
 }
 
 .gallery__link{
   font-size: 32px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.375;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
-
+.banner{
+  font-weight: 700;
+}
 .banner__title{
   font-size: 23px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
   line-height: 1.171;
 }
 
 .banner__text{
   font-size: 12px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
   line-height: 1.222;
 }
 
 .banner__link{
   font-size: 18px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
   line-height: 1.333;
-  text-decoration: none;
 }
 .icecream-item__price{
   font-size: 45px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 .icecream-item__hit{
   font-size: 0;
-  background: rgb(255, 255, 255) url("../img/hit.svg") no-repeat center;
+  background: #FFFFFF url("../img/hit.svg") no-repeat center;
   width: 62px;
   height: 62px;
   border-radius: 31px;
   display: inline-block;
 }
 .icecream-item__link{
-  text-decoration: none;
   display: block;
-  color: rgb(255, 255, 255);
 }
 .button{
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: linear-gradient( 90deg, #E74A35 0%, #F26843 100%);
   box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
   font-size: 18px;
-  color: rgb(254, 254, 254);
-  font-weight: bold;
+  color: #FEFEFE;
+  font-weight: 700;
   line-height: 1.333;
   padding: 10px 18px;
   border-radius: 22px;
@@ -198,37 +174,29 @@ a.search-button{
 }
 .block-about__title{
   font-size: 24px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   line-height: 1.25;
 }
 .block-about__item{
-  font-size: 16px;
-  color: rgb(50, 50, 50);
-  line-height: 1.375;
+  color: #323232;
 }
 .blog-news__header {
-  font-size: 16px;
-  color: rgb(90, 90, 90);
-  line-height: 1.375;
+  color: #5A5A5A;
 }
-.blog-news__main-content a{
+.blog-news__link{
   font-size: 24px;
-  color: rgb(53, 53, 53);
-  font-weight: bold;
+  color: #353535;
+  font-weight: 700;
   line-height: 1.25;
-  text-decoration: none;
-  background-image: linear-gradient(to top, #98ada1 1px, transparent 1px);
+  background-image: linear-gradient(to top, transparent 3px, #353535 3px, #353535 5px, transparent 5px);
 }
 .subscribe__content {
-  font-size: 16px;
-  color: rgb(90, 90, 90);
-  line-height: 1.375;
+  color: #5A5A5A;
 }
 
 .input, textarea {
-  font-size: 16px;
-  color: rgb(50, 50, 50);
-  font-weight: bold;
+  color: #323232;
+  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -236,51 +204,46 @@ a.search-button{
 ::-moz-placeholder,
 :-ms-input-placeholder ,
 :-moz-placeholder {
-  font-size: 16px;
-  color: rgb(153, 153, 153);
+  color: #999999;
   line-height: 1.5;
 }
-.other-links__item a{
+.other-links__link{
   font-size: 13px;
-  color: rgb(255, 255, 255);
   line-height: 1.385;
 }
 .other-links__item--suppliers{
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
 }
 .other-links__item--suppliers::before{
   content: "\2764";
-  color: rgb(255, 255, 255);
   position: absolute;
   left: -20px;
   top: 1px;
 }
 .made-by-info__text{
   font-size: 12px;
-  color: rgb(254, 254, 254);
+  color: #FEFEFE;
   line-height: 1.5;
 }
 
 .catalog-title{
   font-size: 35px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.171;
 }
 .navigation-route__item{
   font-size: 14px;
-  color: rgb(255, 255, 255);
   line-height: 1.143;
 }
 .cart-total-price{
   font-size: 13px;
-  color: rgb(51, 51, 51);
+  color: #333333;
   line-height: 1.231;
 }
 .cart-price-and-weight{
   font-size: 13px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   line-height: 1.231;
 }
 .cart-price-for-kilogram{
@@ -288,7 +251,7 @@ a.search-button{
 }
 .cart-product-name{
   font-size: 13px;
-  color: rgb(50, 50, 50);
+  color: #323232;
   line-height: 1.231;
 }
 .cart-delete-button{
@@ -303,7 +266,7 @@ a.search-button{
   content: "";
   width: 1px;
   height: 15px;
-  background-color: rgb(50, 50, 50);
+  background-color: #323232;
   display: block;
   position: absolute;
   left: 5px;
@@ -317,10 +280,15 @@ a.search-button{
 }
 .cart-footer__total-sum, .cart-total-sum{
   font-size: 15px;
-  color: rgb(50, 50, 50);
-  font-weight: bold;
+  color: #323232;
+  font-weight: 700;
   line-height: 1.2;
 }
 .htmlacademy-link{
   background-image: none;
+}
+.user-navigation__link,
+.icecream-item__text,
+.block-about__title{
+  font-weight: 400;
 }

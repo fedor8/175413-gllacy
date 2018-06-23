@@ -13,24 +13,24 @@
   <nav class="main-navigation">
     <a href="index.html"><img src="img/logo.svg" class="logo" width="154" height="64"
                               alt="Магазин по продаже мороженого собственного производства «Глэйси»"></a>
-    <ul class="main-menu">
+    <ul class="main-menu reset-list">
       <li class="main-menu__item">
-        <a class="catalog-menu__header">Каталог</a>
-        <ul class="catalog-menu">
-          <li class="catalog-menu__item catalog-menu__item--current"><a>Новинки</a></li>
-          <li class="catalog-menu__item"><a href="catalog.html">Сливочное</a></li>
-          <li class="catalog-menu__item"><a href="catalog.html">Щербеты</a></li>
-          <li class="catalog-menu__item"><a href="catalog.html">Фруктовый лед</a></li>
-          <li class="catalog-menu__item"><a href="catalog.html">Мелорин</a></li>
+        <a class="main-menu__link catalog-menu__header">Каталог</a>
+        <ul class="catalog-menu reset-list">
+          <li class="catalog-menu__item"><a class="catalog-menu__link catalog-menu__link--important" href="catalog.html">Новинки</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link catalog-menu__link--current">Сливочное</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Щербеты</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Фруктовый лед</a></li>
+          <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Мелорин</a></li>
         </ul>
       </li>
-      <li class="main-menu__item"><a href="delivery-and-payment.html">Доставка и оплата</a></li>
-      <li class="main-menu__item"><a href="about.html">О Компании</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="delivery-and-payment.html">Доставка и оплата</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="about.html">О Компании</a></li>
     </ul>
-    <ul class="user-navigation">
-      <li class="search-starter"><a href="#" class="">Поиск</a></li>
-      <li class="entrance-starter"><a href="#" class="">Вход</a></li>
-      <li class="basket-starter"><a href="#" class="filled-basket">2 товара</a></li>
+    <ul class="user-navigation reset-list">
+      <li class="search-starter"><a href="#" class="user-navigation__link search-button">Поиск</a></li>
+      <li class="entrance-starter"><a href="#" class="user-navigation__link">Вход</a></li>
+      <li class="basket-starter"><a href="#" class="user-navigation__link filled-cart">2 товара</a></li>
     </ul>
     <div class="short-info">
       <p class="short-info__working-hours">С 10 до 20, ежедневно</p>
@@ -39,7 +39,7 @@
   </nav>
 </header>
 <main class="main-container">
-  <ul class="navigation-route">
+  <ul class="navigation-route reset-list">
     <li class="navigation-route__item"><a href="index.html" class="navigation-route__link">Главная</a></li>
     <li class="navigation-route__item"><a href="catalog.html" class="navigation-route__link">Каталог</a></li>
     <li class="navigation-route__item">Сливочное</li>
@@ -139,7 +139,7 @@
   </section>
 
   <div class="catalog-navigation-container">
-    <ul class="catalog-navigation">
+    <ul class="catalog-navigation reset-list">
       <li class="catalog-navigation__item catalog-navigation__item--back"><a class="catalog-navigation__link">Назад</a>
       </li>
       <li class="catalog-navigation__item catalog-navigation__item--current"><a class="catalog-navigation__link">1</a>
@@ -156,50 +156,51 @@
 
 </main>
 <footer class="main-footer">
-  <ul class="social-links">
+  <ul class="social-links reset-list">
     <li class="social-links__item social-links__item--twitter"><a href="#">Twitter</a></li>
     <li class="social-links__item social-links__item--instagram"><a href="#">Instagram</a></li>
     <li class="social-links__item social-links__item--facebook"><a href="#">Facebook</a></li>
     <li class="social-links__item social-links__item--vkontakte"><a href="#">Vkontakte</a></li>
   </ul>
-  <ul class="other-links">
-    <li class="other-links__item other-links__item--suppliers"><a href="#">Для поставщиков</a></li>
-    <li class="other-links__item"><a href="#">О производстве</a></li>
-    <li class="other-links__item"><a href="#">Наши документы</a></li>
-    <li class="other-links__item"><a href="#">Экологические стандарты</a></li>
+  <ul class="other-links reset-list">
+    <li class="other-links__item other-links__item--suppliers"><a class="other-links__link" href="#">Для поставщиков</a></li>
+    <li class="other-links__item"><a class="other-links__link" href="#">О производстве</a></li>
+    <li class="other-links__item"><a class="other-links__link" href="#">Наши документы</a></li>
+    <li class="other-links__item"><a class="other-links__link" href="#">Экологические стандарты</a></li>
   </ul>
   <div class="made-by-info">
     <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy-small.svg" width="120px" height="39px">
+      <img src="img/logo-htmlacademy-small.svg" width="120" height="39">
     </a>
     <p class="made-by-info__text">Сделано в <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
   </div>
 </footer>
 
-<section class="cart">
-  <div class="cart-row">
-    <a href="#" class="cart-delete-button">Удалить</a>
-    <img src="img/icecream1.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада">
-    <h3 class="cart-product-name">Пломбир с апельсиновым джемом</h3>
-    <div class="cart-price-and-weight">1,5 кг &times; <span class="cart-price-for-kilogram">200 руб.</span></div>
-    <div class="cart-total-price">300 руб.</div>
-  </div>
-  <div class="cart-row">
-    <a href="#" class="cart-delete-button">Удалить</a>
-    <img src="img/icecream3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-    <h3 class="cart-product-name">Клубничный пломбир с присыпкой из белого шоколада</h3>
-    <div class="cart-price-and-weight">1,5 кг &times; <span class="cart-price-for-kilogram">300 руб.</span></div>
-    <div class="cart-total-price">450 руб.</div>
-  </div>
-
-    <div class="cart-footer">
-      <div class="cart-footer__total-sum">
-        <span class="cart-total-sum-label">Итого:</span>
-        <span class="cart-total-sum">750 руб.</span>
-      </div>
-      <button type="button" class="button cart__button">Оформить заказ</button>
+<div class="cart-container">
+  <ul class="cart reset-list">
+    <li class="cart-row">
+      <a href="#" class="cart-delete-button">Удалить</a>
+      <img src="img/icecream1.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада">
+      <h3 class="cart-product-name">Пломбир с апельсиновым джемом</h3>
+      <p class="cart-price-and-weight">1,5 кг &times; <span class="cart-price-for-kilogram">200 руб.</span></p>
+      <p class="cart-total-price">300 руб.</p>
+    </li>
+    <li class="cart-row">
+      <a href="#" class="cart-delete-button">Удалить</a>
+      <img src="img/icecream3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+      <h3 class="cart-product-name">Клубничный пломбир с присыпкой из белого шоколада</h3>
+      <p class="cart-price-and-weight">1,5 кг &times; <span class="cart-price-for-kilogram">300 руб.</span></p>
+      <p class="cart-total-price">450 руб.</p>
+    </li>
+  </ul>
+  <div class="cart-footer">
+    <div class="cart-footer__total-sum">
+      <span class="cart-total-sum-label">Итого:</span>
+      <span class="cart-total-sum">750 руб.</span>
     </div>
-</section>
+    <a href="#" class="button cart__button">Оформить заказ</a>
+  </div>
+</div>
 
 </body>
 </html>
