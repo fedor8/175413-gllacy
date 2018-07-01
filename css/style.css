@@ -122,6 +122,7 @@ input[type = search]{
   padding: 0 16px;
   align-items: center;
   position: relative;
+  white-space: nowrap;
 }
 
 .search-button::before {
@@ -418,6 +419,7 @@ input[type = search]{
 
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .user-navigation {
@@ -608,7 +610,11 @@ input[type = search]{
   border-bottom: solid 1px #90a79a;
   margin: 0 2.22%;
 }
-.icecreams-catalog{
+.icecreams-demo{
+  margin: 0 2.22%;
+}
+.icecreams-catalog,
+.icecreams-demo{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -632,4 +638,7 @@ input[type = search]{
 }
 .navigation-route{
   display: flex;
+}
+.home-link{
+  background-image: none;
 }
