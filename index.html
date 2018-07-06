@@ -20,9 +20,9 @@
            alt="Магазин по продаже мороженого собственного производства «Глэйси»">
       <ul class="main-menu reset-list">
         <li class="main-menu__item catalog-menu__header-item">
-          <a class="main-menu__link catalog-menu__header"><span class="underline">Каталог</span></a>
+          <a class="main-menu__link catalog-menu__header" href="#"><span class="underline underline--main-menu">Каталог</span></a>
           <ul class="catalog-menu reset-list">
-            <li class="catalog-menu__item">
+            <li class="catalog-menu__item catalog-menu__item--important">
               <a class="catalog-menu__link catalog-menu__link--important" href="catalog.html">Новинки</a></li>
             <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Сливочное</a></li>
             <li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Щербеты</a></li>
@@ -31,10 +31,10 @@
           </ul>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="delivery-and-payment.html"><span class="underline">Доставка и оплата</span></a>
+          <a class="main-menu__link" href="delivery-and-payment.html"><span class="underline underline--main-menu">Доставка и оплата</span></a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="about.html"><span class="underline">О Компании</span></a>
+          <a class="main-menu__link" href="about.html"><span class="underline underline--main-menu">О Компании</span></a>
         </li>
       </ul>
       <ul class="user-navigation reset-list">
@@ -68,94 +68,109 @@
         </li>
       </ul>
       <nav class="gallery-navigation">
-        <button type="button" class="gallery-navigation__button">
+        <!--<button type="button" class="gallery-navigation__button">-->
           <label for="gallery-page-1" class="gallery-navigation__link"><span class="visually-hidden">1</span></label>
-        </button>
-        <button type="button" class="gallery-navigation__button">
+        <!--</button>-->
+        <!--<button type="button" class="gallery-navigation__button">-->
           <label for="gallery-page-2" class="gallery-navigation__link"><span class="visually-hidden">2</span></label>
-        </button>
-        <button type="button" class="gallery-navigation__button">
+        <!--</button>-->
+        <!--<button type="button" class="gallery-navigation__button">-->
           <label for="gallery-page-3" class="gallery-navigation__link"><span class="visually-hidden">3</span></label>
-        </button>
+        <!--</button>-->
       </nav>
     </div>
-    <section class="banners">
 
-      <div class="banner banner--left-banner">
+    <section class="banners two-columns">
+
+      <div class="banner banner--left-banner two-columns__column">
         <p class="banner__title">Малинка даром!</p>
         <p class="banner__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
           варенья бесплатно.</p>
-        <a class="banner__link" href="#">Хочу варенье!</a>
+        <div class="banner-link-wrapper"><a class="banner__link button" href="#">Хочу варенье!</a>
+        </div>
       </div>
 
-      <div class="banner banner--right-banner">
+      <div class="banner banner--right-banner two-columns__column">
         <p class="banner__title">Шоколадки даром!</p>
         <p class="banner__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
           совершенно бесплатно.</p>
-        <a class="banner__link" href="#">Хочу шоколадки!</a>
+        <div class="banner-link-wrapper">
+          <a class="banner__link button" href="#">Хочу шоколадки!</a>
+        </div>
       </div>
 
     </section>
 
     <section class="icecreams-demo">
       <article class="icecream-item">
-        <a href="#" class="icecream-item__link">
-          <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
-          <img src="img/icecream1.png" width="200" height="200"
+        <div class="icecream-item__content">
+          <div class="icecream-img-wrapper">
+            <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
+            <img src="img/icecream1.png" width="267" height="267"
                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <div class="icecream-item__price">310₽/кг</div>
+            <div class="icecream-item__price">310₽/кг</div>
+          </div>
           <h2 class="icecream-item__text underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
-        </a>
+          <a class="button icecream-button">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="icecream-item">
-        <a href="#" class="icecream-item__link">
-          <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
-          <img src="img/icecream2.png" width="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
-          <div class="icecream-item__price">380₽/кг</div>
+        <div class="icecream-item__content">
+          <div class="icecream-img-wrapper">
+            <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
+            <img src="img/icecream2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <div class="icecream-item__price">380₽/кг</div>
+          </div>
           <h2 class="icecream-item__text underline">Сливочно-кофейное с кусочками шоколада</h2>
-        </a>
+          <a class="button icecream-button">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="icecream-item">
-        <a href="#" class="icecream-item__link">
-          <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
-          <img src="img/icecream3.png" width="200" height="200"
+        <div class="icecream-item__content">
+          <div class="icecream-img-wrapper">
+            <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
+            <img src="img/icecream3.png" width="267" height="267"
                alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <div class="icecream-item__price">355₽/кг</div>
+            <div class="icecream-item__price">355₽/кг</div>
+          </div>
           <h2 class="icecream-item__text underline">Сливочно-клубничное с присыпкой из белого шоколада</h2>
-        </a>
+          <a class="button icecream-button">Быстрый просмотр</a>
+        </div>
       </article>
       <article class="icecream-item">
-        <a href="#" class="icecream-item__link">
-          <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
-          <img src="img/icecream4.png" width="200" height="200" alt="Сливочное крем-брюле с карамельной подливкой">
-          <div class="icecream-item__price">415₽/кг</div>
+        <div class="icecream-item__content">
+          <div class="icecream-img-wrapper">
+            <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
+            <img src="img/icecream4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <div class="icecream-item__price">415₽/кг</div>
+          </div>
           <h2 class="icecream-item__text underline">Сливочное крем-брюле с карамельной подливкой</h2>
-        </a>
+          <a class="button icecream-button">Быстрый просмотр</a>
+        </div>
       </article>
     </section>
 
-    <div class="block-about-wrapper">
-      <article class="block-about">
-        <p class="block-about__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
-          производства на развес</p>
-        <ul class="block-about__content reset-list">
-          <li class="block-about__item block-about__item--icecream">Все наше мороженое изготавливается на собственном
-            производстве, с использованием современного оборудования и проверенных временем технологий.
-          </li>
-          <li class="block-about__item block-about__item--cow">Для приготовления мороженого используются настоящие
-            сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,
-            экологически чистого сырья.
-          </li>
-          <li class="block-about__item block-about__item--leaf">Закупка ингредиентов производится только у проверенных
-            фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-          </li>
-          <li class="block-about__item block-about__item--temperature">Доставка нашего мороженого до заказчиков
-            осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить
-            превосходный вкус.
-          </li>
-        </ul>
-      </article>
-    </div>
+    <article class="block-about">
+      <p class="block-about__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+        производства на развес</p>
+      <ul class="block-about__content reset-list">
+        <li class="block-about__item block-about__item--icecream">Все наше мороженое изготавливается на собственном
+          производстве, с использованием современного оборудования и проверенных временем технологий.
+        </li>
+        <li class="block-about__item block-about__item--cow">Для приготовления мороженого используются настоящие
+          сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,
+          экологически чистого сырья.
+        </li>
+        <li class="block-about__item block-about__item--leaf">Закупка ингредиентов производится только у проверенных
+          фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+        </li>
+        <li class="block-about__item block-about__item--temperature">Доставка нашего мороженого до заказчиков
+          осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить
+          превосходный вкус.
+        </li>
+      </ul>
+    </article>
+
 
     <div class="two-columns">
       <section class="blog-news two-columns__column">
@@ -178,7 +193,10 @@
       </section>
     </div>
 
-    <section class="map"></section>
+    <section class="map">
+   	 <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5903.303715393026!2d30.317497503028136!3d59.93802381971337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1531228245051" width="900" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
   </main>
   <footer class="main-footer">
     <ul class="social-links reset-list">
@@ -212,7 +230,7 @@
     </ul>
     <div class="made-by-info">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="120" height="39" alt="Логотип HTML Academy">
+        <img src="img/logo-htmlacademy-small.svg" width="113" height="38" alt="Логотип HTML Academy">
       </a>
       <p class="made-by-info__text">Сделано в <a class="htmlacademy underline"
                                                  href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
