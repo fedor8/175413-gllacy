@@ -18,7 +18,7 @@
         </a>
         <ul class="main-menu reset-list">
           <li class="main-menu__item catalog-menu__header-item">
-            <a class="main-menu__link catalog-menu__header"><span class="underline underline--main-menu">Каталог</span></a>
+            <a class="main-menu__link catalog-menu__header current-page"><span class="underline--main-menu">Каталог</span></a>
             <ul class="catalog-menu reset-list">
               <li class="catalog-menu__item  catalog-menu__item--important">
                 <a class="catalog-menu__link catalog-menu__link--important" href="#">Новинки</a>
@@ -36,16 +36,45 @@
             class="underline underline--main-menu">О Компании</span></a></li>
         </ul>
         <ul class="user-navigation reset-list">
-          <li class="user-navigation__item"><a href="#" class="user-navigation__link search-button"><span
-            class="visually-hidden">Поиск</span></a></li>
-          <li class="user-navigation__item"><a href="#" class="user-navigation__link entrance-button">Вход</a></li>
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link filled-cart-button">2 товара</a>
-            <section class="cart-container temporary-hidden">
+            <a href="#" class="user-navigation__link search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17">
+                <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-navigation__item">
+            <a href="#" class="user-navigation__link entrance-button">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+              <g>
+                <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+                <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+                  />
+              </g>
+              </svg>
+              <span>Вход</span>
+            </a>
+          </li>
+          <li class="user-navigation__item">
+            <a href="#" class="user-navigation__link cart-button cart-button--full">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+                <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
+                <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+                <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+                  L17.372,13z"/>
+              </svg>
+              <span>2 товара</span>
+            </a>
+            <section class="cart-panel temporary-hidden">
               <ul class="cart reset-list">
                 <li class="cart-row">
                   <a href="#" class="cart-delete-button"><span class="visually-hidden">Удалить</span></a>
-                  <img src="img/icecream1.png" width="33" height="33" alt="Сливочно-кофейное с кусочками шоколада">
+                  <img src="img/icecream1.png" width="33" height="33" class="cart-row-product-image"
+                       alt="Сливочно-кофейное с кусочками шоколада">
                   <h3 class="cart-product-name">Пломбир с апельсиновым джемом</h3>
                   <p class="cart-price-and-weight">1,5 кг &times; <span class="cart-price-per-kilogram">200 руб.</span>
                   </p>
@@ -53,7 +82,7 @@
                 </li>
                 <li class="cart-row">
                   <a href="#" class="cart-delete-button"><span class="visually-hidden">Удалить</span></a>
-                  <img src="img/icecream3.png" width="33" height="33"
+                  <img src="img/icecream3.png" width="33" height="33" class="cart-row-product-image"
                        alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <h3 class="cart-product-name">Клубничный пломбир с присыпкой из белого шоколада</h3>
                   <p class="cart-price-and-weight">1,5 кг &times; <span class="cart-price-per-kilogram">300 руб.</span>
@@ -98,7 +127,11 @@
               <img src="img/icecream1.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               <div class="icecream-item__price">310₽/кг</div></div>
             <h2 class="icecream-item__text underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -108,7 +141,11 @@
               <div class="icecream-item__price">380₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочно-кофейное с кусочками шоколада</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -119,7 +156,11 @@
               <div class="icecream-item__price">355₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочно-клубничное с присыпкой из белого шоколада</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -129,7 +170,11 @@
               <div class="icecream-item__price">415₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочное крем-брюле с карамельной подливкой</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -140,7 +185,11 @@
               <div class="icecream-item__price">325₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочное с брусничным джемом</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -150,7 +199,11 @@
               <div class="icecream-item__price">410₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочно-черничное с цельными ягодами черники</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -160,7 +213,11 @@
               <div class="icecream-item__price">375₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочно-лимонное с карамельной присыпкой</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -170,7 +227,11 @@
               <div class="icecream-item__price">320₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочное с шоколадной стружкой</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -181,17 +242,25 @@
               <div class="icecream-item__price">440₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочно-ванильное с кусочками шоколада</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
-        <article class="icecream-item">
+       <article class="icecream-item">
           <div class="icecream-item__content">
             <div class="icecream-img-wrapper">
               <img src="img/icecream10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
               <div class="icecream-item__price">435₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочноe с ментоловым сиропом</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -201,7 +270,11 @@
               <div class="icecream-item__price">355₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочное с кусочками черного шоколада</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
         <article class="icecream-item">
@@ -211,7 +284,11 @@
               <div class="icecream-item__price">420₽/кг</div>
             </div>
             <h2 class="icecream-item__text underline">Сливочное с мятным сиропом</h2>
-            <a class="button icecream-button">Быстрый просмотр</a>
+            <div class="icecream-item__extra">
+              <div class="icecream-item__extra-content">
+                <a class="button icecream-button">Быстрый просмотр</a>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -277,5 +354,6 @@
 
   </div>
 </div>
+<script type="application/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -11,7 +11,6 @@
 <input class="gallery-toggle" type="radio" id="gallery-page-1" name="gallery-toggle" checked>
 <input class="gallery-toggle" type="radio" id="gallery-page-2" name="gallery-toggle">
 <input class="gallery-toggle" type="radio" id="gallery-page-3" name="gallery-toggle">
-
 <div class="site-wrapper">
 <div class="centered-element">
   <header class="main-header">
@@ -20,7 +19,7 @@
            alt="Магазин по продаже мороженого собственного производства «Глэйси»">
       <ul class="main-menu reset-list">
         <li class="main-menu__item catalog-menu__header-item">
-          <a class="main-menu__link catalog-menu__header" href="#"><span class="underline underline--main-menu">Каталог</span></a>
+          <a class="main-menu__link catalog-menu__header" href="catalog.html"><span class="underline underline--main-menu">Каталог</span></a>
           <ul class="catalog-menu reset-list">
             <li class="catalog-menu__item catalog-menu__item--important">
               <a class="catalog-menu__link catalog-menu__link--important" href="catalog.html">Новинки</a></li>
@@ -38,15 +37,64 @@
         </li>
       </ul>
       <ul class="user-navigation reset-list">
-        <li class="user-navigation__item"><a href="#" class="user-navigation__link search-button"><span
-          class="visually-hidden">Поиск</span></a></li>
-        <li class="user-navigation__item"><a href="#" class="user-navigation__link entrance-button">Вход</a></li>
-        <li class="user-navigation__item"><a href="#" class="user-navigation__link cart-button">Пусто</a></li>
+        <li class="user-navigation__item">
+          <a href="#" class="user-navigation__link search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17">
+              <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+            </svg>
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <section class="search-panel temporary-hidden">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+              <input id="search-query" name="query" type="search" required placeholder="Что ищем?" class="text-input search-query">
+              <button type="submit" class="visually-hidden">Найти</button>
+            </form>
+          </section>
+        </li>
+        <li class="user-navigation__item">
+          <a href="#" class="user-navigation__link entrance-button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+              <g>
+                <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+                <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+                  />
+              </g>
+              </svg>
+            <span>Вход</span>
+          </a>
+          <section class="login-panel temporary-hidden">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <input id="login-email" name="email" type="email" required placeholder="Электронная почта" class="text-input login-email">
+              <input id="login-password" name="password" type="password" required placeholder="Пароль" class="text-input login-password">
+              <div class="login-panel--controls">
+                <button type="submit" class="button login__submit-button">Войти</button>
+                <div>
+                  <a href="#" class="text-link"><span class="underline--black">Забыли пароль?</span></a>
+                  <a href="#" class="text-link"><span class="underline--black">Новая регистрация</span></a>
+                </div>
+              </div>
+            </form>
+          </section>
+        </li>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link cart-button cart-button--empty">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+                <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
+                <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+                <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+                  L17.372,13z"/>
+              </svg>
+            <span>Пусто</span>
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="short-info">
       <p class="short-info__working-hours">С 10 до 20, ежедневно</p>
-      <p class="short-info__phone-number"><a href="tel:88124502525" class="">8 812 450-25-25</a></p>
+      <p class="short-info__phone-number"><a href="tel:88124502525">8 812 450-25-25</a></p>
     </div>
   </header>
   <main class="main-container">
@@ -103,7 +151,6 @@
 
     <section class="icecreams-demo">
       <article class="icecream-item">
-        <div class="icecream-item__content">
           <div class="icecream-img-wrapper">
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream1.png" width="267" height="267"
@@ -111,22 +158,26 @@
             <div class="icecream-item__price">310₽/кг</div>
           </div>
           <h2 class="icecream-item__text underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
-          <a class="button icecream-button">Быстрый просмотр</a>
+        <div class="icecream-item__extra">
+          <div class="icecream-item__extra-content">
+            <a class="button icecream-button">Быстрый просмотр</a>
+          </div>
         </div>
       </article>
       <article class="icecream-item">
-        <div class="icecream-item__content">
           <div class="icecream-img-wrapper">
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <div class="icecream-item__price">380₽/кг</div>
           </div>
           <h2 class="icecream-item__text underline">Сливочно-кофейное с кусочками шоколада</h2>
-          <a class="button icecream-button">Быстрый просмотр</a>
+        <div class="icecream-item__extra">
+          <div class="icecream-item__extra-content">
+            <a class="button icecream-button">Быстрый просмотр</a>
+          </div>
         </div>
       </article>
       <article class="icecream-item">
-        <div class="icecream-item__content">
           <div class="icecream-img-wrapper">
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream3.png" width="267" height="267"
@@ -134,18 +185,23 @@
             <div class="icecream-item__price">355₽/кг</div>
           </div>
           <h2 class="icecream-item__text underline">Сливочно-клубничное с присыпкой из белого шоколада</h2>
-          <a class="button icecream-button">Быстрый просмотр</a>
+        <div class="icecream-item__extra">
+          <div class="icecream-item__extra-content">
+            <a class="button icecream-button">Быстрый просмотр</a>
+          </div>
         </div>
       </article>
       <article class="icecream-item">
-        <div class="icecream-item__content">
           <div class="icecream-img-wrapper">
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <div class="icecream-item__price">415₽/кг</div>
           </div>
           <h2 class="icecream-item__text underline">Сливочное крем-брюле с карамельной подливкой</h2>
-          <a class="button icecream-button">Быстрый просмотр</a>
+        <div class="icecream-item__extra">
+          <div class="icecream-item__extra-content">
+            <a class="button icecream-button">Быстрый просмотр</a>
+          </div>
         </div>
       </article>
     </section>
@@ -185,7 +241,7 @@
             <p class="subscribe__content">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
               вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <div class="subscribe-elements-wrapper">
-              <input id="subscribe-email" name="email" type="email" placeholder="Электронная почта" class="text-input">
+              <input id="subscribe-email" name="email" type="email" required placeholder="Электронная почта" class="text-input">
               <button type="submit" class="button subscribe__button">Отправить</button>
             </div>
           </form>
@@ -194,7 +250,20 @@
     </div>
 
     <section class="map">
+      <div class="map-container">
+        <img class="map-img" width="1200" height="430" src="img/map.jpg" alt="map">
+      </div>
+      <div class="feedback-form">
+        <p class="feedback-form__address-title">Адрес главного офиса<br/>  и офлайн-магазина:</p>
+        <p class="feedback-form__address">ул. Большая Конюшенная<br/> 19/8, Санкт-Петербург</p>
+        <p class="feedback-form__orders-title">Для заказов по телефону:</p>
+        <p class="feedback-form__phone">8 812 450-25-25</p>
+        <p class="feedback-form__extra">(с 10 до 20 ежедневно)</p>
+        <a class="button feedback-button" href="#">Форма обратной связи</a>
+      </div>
+<!--
    	 <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5903.303715393026!2d30.317497503028136!3d59.93802381971337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1531228245051" width="900" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+-->
     </section>
 
   </main>
@@ -238,35 +307,23 @@
     </div>
   </footer>
 
-  <section class="search temporary-hidden">
-    <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-      <input id="search-query" name="query" type="search" placeholder="Что ищем?" class="text-input">
-      <button type="submit" class="visually-hidden">Найти</button>
-    </form>
-  </section>
-
-  <section class="login temporary-hidden">
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <input id="login-email" name="email" type="email" placeholder="Электронная почта" class="text-input">
-      <input id="login-password" name="password" type="password" placeholder="Пароль" class="text-input">
-      <button type="submit" class="button login__submit-button">Войти</button>
-      <a href="#" class="text-link">Забыли пароль?</a>
-      <a href="#" class="text-link">Новая регистрация</a>
-    </form>
-  </section>
-
-  <section class="feedback temporary-hidden">
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <input id="feedback-your-name" name="name" type="text" placeholder="Как вас зовут?"
-             class="text-input feedback__your-name-input">
-      <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?"
-             class="text-input feedback__email-input">
-      <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь&hellip;"
-                class="textarea feedback__textarea"></textarea>
-      <button type="submit" class="button feedback__submit-button">Отправить</button>
-    </form>
-  </section>
+  <div class="feedback-panel__wrapper temporary-hidden">
+    <section class="feedback-panel temporary-hidden">
+      <a href="#" class="feedback-panel-close-button"><span class="visually-hidden">Закрыть</span></a>
+      <form class="feedback-panel__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-panel__header">Мы обязательно вам ответим!</p>
+        <input id="feedback-your-name" name="name" type="text" placeholder="Как вас зовут?" required
+               class="text-input feedback__your-name-input">
+        <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" required
+               class="text-input feedback__email-input">
+        <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь&hellip;" required
+                  class="textarea feedback__textarea"></textarea>
+        <button type="submit" class="button feedback__submit-button">Отправить</button>
+      </form>
+    </section>
+  </div>
 </div>
 </div>
+<script type="application/javascript" src="js/script.js"></script>
 </body>
 </html>
