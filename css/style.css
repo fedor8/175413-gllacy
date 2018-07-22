@@ -1076,16 +1076,17 @@ transform: rotate(-45deg);
   font-size: 13px;
   color: #323232;
   line-height: 1.231;
-  display: inline-block;
+  display: block;
+  margin-bottom: 5px;
+  max-width: 138px;
 }
 .login-email,
 .login-password{
   margin-bottom: 15px;
-  width: 210px;
+  width: 240px;
 }
 .login-panel--controls{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 ::placeholder{
@@ -1189,8 +1190,8 @@ transform: rotate(-45deg);
   border-top: solid 1px #cacac7;
 }
 .feedback-panel:not(.temporary-hidden){
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) translateX(0px);
 }
 .feedback-panel.temporary-hidden{
-  transform: scale(0.5);
+  transform: translateX(-2000px);
 }
