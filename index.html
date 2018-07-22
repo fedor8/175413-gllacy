@@ -12,14 +12,13 @@
 <input class="gallery-toggle" type="radio" id="gallery-page-2" name="gallery-toggle">
 <input class="gallery-toggle" type="radio" id="gallery-page-3" name="gallery-toggle">
 <div class="site-wrapper">
-<div class="centered-element">
   <header class="main-header">
     <nav class="main-navigation">
       <img src="img/logo.svg" class="logo" width="154" height="64"
            alt="Магазин по продаже мороженого собственного производства «Глэйси»">
       <ul class="main-menu reset-list">
-        <li class="main-menu__item catalog-menu__header-item">
-          <a class="main-menu__link catalog-menu__header" href="catalog.html"><span class="underline underline--main-menu">Каталог</span></a>
+        <li class="main-menu__item submenu__header-item">
+          <a class="main-menu__link submenu__header" href="catalog.html"><span class="underline underline--main-menu">Каталог</span></a>
           <ul class="catalog-menu reset-list">
             <li class="catalog-menu__item catalog-menu__item--important">
               <a class="catalog-menu__link catalog-menu__link--important" href="catalog.html">Новинки</a></li>
@@ -38,21 +37,21 @@
       </ul>
       <ul class="user-navigation reset-list">
         <li class="user-navigation__item">
-          <a href="#" class="user-navigation__link search-button">
+          <a href="#" class="user-navigation__link user-navigation__link--regular search-button">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17">
               <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
             </svg>
             <span class="visually-hidden">Поиск</span>
           </a>
           <section class="search-panel temporary-hidden">
-            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
               <input id="search-query" name="query" type="search" required placeholder="Что ищем?" class="text-input search-query">
               <button type="submit" class="visually-hidden">Найти</button>
             </form>
           </section>
         </li>
         <li class="user-navigation__item">
-          <a href="#" class="user-navigation__link entrance-button">
+          <a href="#" class="user-navigation__link user-navigation__link--regular entrance-button">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
               <g>
@@ -64,7 +63,7 @@
             <span>Вход</span>
           </a>
           <section class="login-panel temporary-hidden">
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post" onsubmit="alert('dddd');">
               <input id="login-email" name="email" type="email" required placeholder="Электронная почта" class="text-input login-email">
               <input id="login-password" name="password" type="password" required placeholder="Пароль" class="text-input login-password">
               <div class="login-panel--controls">
@@ -116,15 +115,9 @@
         </li>
       </ul>
       <nav class="gallery-navigation">
-        <!--<button type="button" class="gallery-navigation__button">-->
           <label for="gallery-page-1" class="gallery-navigation__link"><span class="visually-hidden">1</span></label>
-        <!--</button>-->
-        <!--<button type="button" class="gallery-navigation__button">-->
           <label for="gallery-page-2" class="gallery-navigation__link"><span class="visually-hidden">2</span></label>
-        <!--</button>-->
-        <!--<button type="button" class="gallery-navigation__button">-->
           <label for="gallery-page-3" class="gallery-navigation__link"><span class="visually-hidden">3</span></label>
-        <!--</button>-->
       </nav>
     </div>
 
@@ -231,8 +224,10 @@
     <div class="two-columns">
       <section class="blog-news two-columns__column">
         <p class="blog-news__header">Новое в нашем блоге</p>
-        <h3 class="blog-news__main-content"><a href="#" class="blog-news__link">10 способов сервировки<br>фруктовых
-          щербетов к<br>столу</a></h3>
+        <h3 class="blog-news__main-content">
+          <a href="#" class="blog-news__link"><span class="blog-news__link-text">10 способов сервировки</span><span class="blog-news__link-text">фруктовых
+          щербетов к</span><span class="blog-news__link-text">столу</span></a>
+        </h3>
       </section>
 
       <section class="subscribe two-columns__column">
@@ -254,10 +249,12 @@
         <img class="map-img" width="1200" height="430" src="img/map.jpg" alt="map">
       </div>
       <div class="feedback-form">
-        <p class="feedback-form__address-title">Адрес главного офиса<br/>  и офлайн-магазина:</p>
-        <p class="feedback-form__address">ул. Большая Конюшенная<br/> 19/8, Санкт-Петербург</p>
+        <p class="feedback-form__address-title">Адрес главного офиса</p>
+        <p class="feedback-form__address-title"> и офлайн-магазина:</p>
+        <p class="feedback-form__address">ул. Большая Конюшенная</p>
+        <p class="feedback-form__address">19/8, Санкт-Петербург</p>
         <p class="feedback-form__orders-title">Для заказов по телефону:</p>
-        <p class="feedback-form__phone">8 812 450-25-25</p>
+        <p class="feedback-form__phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
         <p class="feedback-form__extra">(с 10 до 20 ежедневно)</p>
         <a class="button feedback-button" href="#">Форма обратной связи</a>
       </div>
@@ -307,23 +304,24 @@
     </div>
   </footer>
 
-  <div class="feedback-panel__wrapper temporary-hidden">
-    <section class="feedback-panel temporary-hidden">
-      <a href="#" class="feedback-panel-close-button"><span class="visually-hidden">Закрыть</span></a>
-      <form class="feedback-panel__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-panel__header">Мы обязательно вам ответим!</p>
-        <input id="feedback-your-name" name="name" type="text" placeholder="Как вас зовут?" required
-               class="text-input feedback__your-name-input">
-        <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" required
-               class="text-input feedback__email-input">
-        <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь&hellip;" required
-                  class="textarea feedback__textarea"></textarea>
-        <button type="submit" class="button feedback__submit-button">Отправить</button>
-      </form>
-    </section>
-  </div>
+
+  <section class="feedback-panel temporary-hidden">
+    <a href="#" class="feedback-panel-close-button"><span class="visually-hidden">Закрыть</span></a>
+    <form class="feedback-panel__form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-panel__header">Мы обязательно вам ответим!</p>
+      <input id="feedback-your-name" name="name" type="text" placeholder="Как вас зовут?" required
+             class="text-input feedback__your-name-input">
+      <input id="feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" required
+             class="text-input feedback__email-input">
+      <textarea id="feedback-text" name="feedback" placeholder="Напишите что-нибудь&hellip;" required
+                class="textarea feedback__textarea"></textarea>
+      <button type="submit" class="button feedback__submit-button">Отправить</button>
+    </form>
+  </section>
+
+  <div class="modal-blackout temporary-hidden"></div>
+
 </div>
-</div>
-<script type="application/javascript" src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

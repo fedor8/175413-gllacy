@@ -9,7 +9,6 @@
 </head>
 <body>
 <div class="site-wrapper">
-  <div class="centered-element">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="home-link">
@@ -17,8 +16,8 @@
                alt="Магазин по продаже мороженого собственного производства «Глэйси»">
         </a>
         <ul class="main-menu reset-list">
-          <li class="main-menu__item catalog-menu__header-item">
-            <a class="main-menu__link catalog-menu__header current-page"><span class="underline--main-menu">Каталог</span></a>
+          <li class="main-menu__item submenu__header-item">
+            <a class="main-menu__link submenu__header current-page"><span class="underline--main-menu">Каталог</span></a>
             <ul class="catalog-menu reset-list">
               <li class="catalog-menu__item  catalog-menu__item--important">
                 <a class="catalog-menu__link catalog-menu__link--important" href="#">Новинки</a>
@@ -37,7 +36,7 @@
         </ul>
         <ul class="user-navigation reset-list">
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link search-button">
+            <a href="#" class="user-navigation__link user-navigation__link--regular search-button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17">
                 <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
               </svg>
@@ -45,7 +44,7 @@
             </a>
           </li>
           <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link entrance-button">
+            <a href="#" class="user-navigation__link user-navigation__link--regular entrance-button">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
               <g>
@@ -118,7 +117,62 @@
 
       <h1 class="catalog-title">Сливочное мороженое</h1>
 
-      <aside class="catalog-filter"></aside>
+      <aside class="catalog-filter">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="filter-row">
+            <div class="filter-section">
+              <span class="filter-label"><div class="triangle"></div>Сортировка:</span>
+              <select name="sort" class="filter-field sort-field">
+                <option value="by-popularity" class="sort-field__option">по популярности</option>
+                <option value="price-asc" class="sort-field__option">сначала недорогие</option>
+                <option value="price-desc" class="sort-field__option">сначала дорогие</option>
+                <option value="by-fat" class="sort-field__option">по жирности</option>
+              </select>
+            </div>
+            <div class="filter-section">
+              <span class="filter-label">Цена: 100 руб. – 500 руб.:</span>
+              <div class="filter-field range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+            </div>
+            <div class="filter-section">
+              <span class="filter-label">Жирность:</span>
+              <div class="filter-field fat-field">
+                <input class="fat-radio-button" id="fat-0" type="radio" name="fat" value="fat-0">
+                <label class="fat-radio-button__label" for="fat-0">0%</label>
+                <input class="fat-radio-button" id="fat-less-than-10" type="radio" name="fat" value="fat-less-than-10">
+                <label class="fat-radio-button__label" for="fat-less-than-10">до 10%</label>
+                <input class="fat-radio-button" id="fat-less-than-30" type="radio" name="fat" value="fat-less-than-30">
+                <label class="fat-radio-button__label" for="fat-less-than-30">до 30%</label>
+                <input disabled checked class="fat-radio-button" id="fat-more-than-30" type="radio" name="fat" value="fat-more-than-30">
+                <label class="fat-radio-button__label" for="fat-more-than-30">выше 30%</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-row">
+            <div class="filter-section">
+              <span class="filter-label">Наполнители:</span>
+              <div class="filter-field filler-field">
+                <input class="filler-checkbox" id="chocolate" type="checkbox" name="fillers" value="chocolate">
+                <label class="filler-checkbox__label" for="chocolate">шоколадные</label>
+                <input class="filler-checkbox" id="sugar-powders" type="checkbox" name="fillers" value="sugar-powders">
+                <label class="filler-checkbox__label" for="sugar-powders">сахарные присыпки</label>
+                <input class="filler-checkbox" id="fruites" type="checkbox" name="fillers" value="fruites">
+                <label class="filler-checkbox__label" for="fruites">фрукты</label>
+                <input class="filler-checkbox" id="syrups" type="checkbox" name="fillers" value="syrups">
+                <label class="filler-checkbox__label" for="syrups">сиропы</label>
+                <input disabled checked class="filler-checkbox" id="jam" type="checkbox" name="fillers" value="jam">
+                <label class="filler-checkbox__label" for="jam">джемы</label>
+              </div>
+            </div>
+            <button type="submit" class="filter-button">Применить</button>
+          </div>
+        </form>
+      </aside>
 
       <section class="icecreams-catalog">
         <article class="icecream-item">
@@ -352,7 +406,8 @@
       </div>
     </footer>
 
-  </div>
+  <div class="modal-blackout temporary-hidden"></div>
+
 </div>
 <script type="application/javascript" src="js/script.js"></script>
 </body>
