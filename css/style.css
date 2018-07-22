@@ -752,7 +752,7 @@ transform: rotate(-45deg);
   display: flex;
 }
 .temporary-hidden{
-  display: none;
+  transform: translateX(-2000px);
 }
 .main-footer{
   display: flex;
@@ -1027,7 +1027,7 @@ transform: rotate(-45deg);
 }
 .modal{
   display: block;
-  z-index: 15;
+  transform: translateX(0px);
 }
 .search-panel,
 .login-panel,
@@ -1038,6 +1038,8 @@ transform: rotate(-45deg);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 15px;
   margin: 5px;
+  transition: transform 0.6s ease-out;
+  z-index: 15;
 }
 .search-panel,
 .login-panel,
@@ -1049,7 +1051,6 @@ transform: rotate(-45deg);
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   box-sizing: border-box;
 }
 .feedback-panel__wrapper{
@@ -1186,4 +1187,10 @@ transform: rotate(-45deg);
 }
 .cart-footer{
   border-top: solid 1px #cacac7;
+}
+.feedback-panel:not(.temporary-hidden){
+  transform: translate(-50%, -50%) scale(1);
+}
+.feedback-panel.temporary-hidden{
+  transform: scale(0.5);
 }
