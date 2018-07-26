@@ -937,23 +937,25 @@ transform: rotate(-45deg);
   height: 430px;
   min-width: 900px;
   text-align: center;
-  position: relative;
   margin: 0 -2.22%;
+  background-color: #aacbd9;
 }
 .map-container{
   width: 100%;
   position: absolute;
   max-width: 100%;
   overflow: hidden;
+  left: 0;
+  right: 0;
+  height: 430px;
 }
 .map-img{
   height: 100%;
   max-width: none;
 }
 .feedback-form{
-  position: absolute;
-  top: 65px;
-  right: 0;
+  position: relative;
+  float: right;
   border-radius: 15px;
   background-color: #fff;
   color: #323232;
@@ -963,6 +965,7 @@ transform: rotate(-45deg);
   min-height: 305px;
   box-sizing: border-box;
   margin-right: 2.22%;
+  margin-top: 5%;
 }
 .feedback-form__address-title,
 .feedback-form__address,
