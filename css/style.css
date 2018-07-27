@@ -8,6 +8,7 @@ body{
 .site-wrapper {
   background-color: #849d8f;
 }
+
 .index-page .site-wrapper{
   background: #849d8f url("../img/gallery-slide1.png") no-repeat top center;
 }
@@ -277,6 +278,7 @@ img {
   margin-right: 5px;
 }
 
+
 .user-navigation__link--regular:hover,
 .cart-button--full{
   color: #323232;
@@ -374,6 +376,17 @@ img {
 
 #gallery-page-3:checked ~ .site-wrapper{
   background: #9d8b84 url("../img/gallery-slide3.png") no-repeat top center;
+}
+#gallery-page-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+}
+
+#gallery-page-2:checked ~ .site-wrapper{
+  background-color: #8996a6;
+}
+
+#gallery-page-3:checked ~ .site-wrapper{
+  background-color: #9d8b84;
 }
 .gallery-toggle{
   display: none;
@@ -759,7 +772,7 @@ transform: rotate(-45deg);
   display: flex;
 }
 .temporary-hidden{
-  display: none;
+  transform: translateX(-2000px);
 }
 .main-footer{
   display: flex;
@@ -920,6 +933,7 @@ transform: rotate(-45deg);
 .icecream-item__text{
   font-size: 16px;
   display: inline;
+/*  word-wrap: break-word;*/
 }
 .icecream-button{
   display: inline-block;
@@ -966,6 +980,50 @@ transform: rotate(-45deg);
   box-sizing: border-box;
   margin-right: 2.22%;
   margin-top: 5%;
+}
+.feedback-form__address-title,
+.feedback-form__address,
+.feedback-form__phone,
+.feedback-form__extra,
+.feedback-form__orders-title{
+  margin: 0;
+}
+.feedback-form__address,
+.feedback-form__phone{
+  font-size: 18px;
+  color: #323232;
+  font-weight: 700;
+}
+.feedback-form__orders-title{
+  margin-top: 20px;
+}
+.feedback-form__address-title,
+.feedback-form__extra,
+.feedback-form__orders-title{
+  font-size: 14px;
+  line-height: 1.429;
+}
+.feedback-button{
+  display: block;
+  float: right;
+  margin-top: 28px;
+}
+.map-img{
+  margin-right: auto;
+  margin-left: auto;
+}
+.feedback-form{
+  position: absolute;
+  top: 65px;
+  right: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #323232;
+  text-align: left;
+  padding: 30px 25px;
+  min-width: 305px;
+  min-height: 305px;
+  box-sizing: border-box;
 }
 .feedback-form__address-title,
 .feedback-form__address,
