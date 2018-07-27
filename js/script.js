@@ -1,4 +1,3 @@
-
 (function () {
   "use strict";
   let blckoutElement = document.querySelector(".modal-blackout");
