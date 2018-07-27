@@ -51,7 +51,7 @@
           </li>
           <li class="user-navigation__item">
             <a href="#" class="user-navigation__link user-navigation__link--regular entrance-button">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
               <g>
                 <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
@@ -77,7 +77,7 @@
           </li>
           <li class="user-navigation__item">
             <a href="#" class="user-navigation__link cart-button cart-button--full">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
                 <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
                 <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
@@ -140,7 +140,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-row">
             <div class="filter-section">
-              <span class="filter-label"><div class="triangle"></div>Сортировка:</span>
+              <span class="filter-label">Сортировка:</span>
               <select name="sort" class="filter-field sort-field">
                 <option value="by-popularity" class="sort-field__option">по популярности</option>
                 <option value="price-asc" class="sort-field__option">сначала недорогие</option>
@@ -149,6 +149,8 @@
               </select>
             </div>
             <div class="filter-section">
+              <input type="hidden" name="min-price" value="100">
+              <input type="hidden" name="max-price" value="500">
               <span class="filter-label">Цена: 100 руб. – 500 руб.:</span>
               <div class="filter-field range-controls">
                 <div class="scale">
@@ -296,7 +298,7 @@
         <article class="icecream-item">
           <div class="icecream-item__content">
             <div class="icecream-img-wrapper">
-              <img src="img/icecream8.png" width="267" height="267">
+              <img src="img/icecream8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               <div class="icecream-item__price">320₽<span class="icecream-item__kilo-title">/кг</span></div>
             </div>
             <h2 class="icecream-item__text underline">Сливочное с шоколадной стружкой</h2>
@@ -417,7 +419,7 @@
       </ul>
       <div class="made-by-info">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy-small.svg" width="120" height="39">
+          <img src="img/logo-htmlacademy-small.svg" width="120" height="39" alt="HTML Academy logo">
         </a>
         <p class="made-by-info__text">Сделано в <a class="htmlacademy underline"
                                                    href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©
