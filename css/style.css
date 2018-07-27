@@ -443,7 +443,7 @@ img {
   background-image: url("../img/waffle-pattern.png");
   border-radius: 15px;
   padding: 25px 0;
-  margin: 4px 4px 30px 0;
+  margin: 0 4px 30px 0;
 }
 
 .block-about__title {
@@ -980,7 +980,7 @@ transform: rotate(-45deg);
   display: inline;
   font-size: 16px;
   line-height: 1.375;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .icecream-button{
   display: inline-block;
