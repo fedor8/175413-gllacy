@@ -16,7 +16,7 @@ body{
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2.22%;
+  padding: 0 2.1%;
   box-sizing: border-box;
 }
 .site-wrapper::before{
@@ -76,7 +76,6 @@ img {
   font-weight: 700;
   line-height: 1.333;
   padding: 10px 18px;
-  padding-bottom: 14px;
   border-radius: 22px;
   border: none;
   cursor: pointer;
@@ -101,8 +100,12 @@ img {
 }
 
 .main-menu__item {
-  margin-left: 25px;
+  margin-left: 27px;
   position: relative;
+}
+.main-menu__item:nth-child(1){
+  margin-left: 8px;
+  margin-right: -13px;
 }
 
 .main-menu__link {
@@ -249,6 +252,9 @@ img {
 .user-navigation__link.cart-button--full{
   background-color: rgba(255, 255, 255, 1);
 }
+.cart-button{
+  padding-right: 16px;
+}
 .cart-button--empty:hover{
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -282,12 +288,6 @@ img {
   color: #323232;
 }
 
-.short-info__working-hours {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.143;
-}
-
 .short-info__phone-number {
   font-size: 22px;
   font-weight: 700;
@@ -297,8 +297,8 @@ img {
   position: relative;
 }
 .gallery{
-  padding-top: 320px;
-  max-width: 700px;
+  padding-top: 313px;
+  max-width: 740px;
   margin: 0 auto;
 }
 .gallery__content{
@@ -306,13 +306,14 @@ img {
   display: none;
 }
 
-.galery__title {
+.gallery__title {
   font-size: 60.468px;
   font-weight: 700;
   line-height: 1;
-  max-width: 700px;
+  max-width: 740px;
   margin-top: 0;
   margin-bottom: 30px;
+  margin-right: 40px;
 }
 
 .gallery__link {
@@ -324,11 +325,13 @@ img {
   min-height: 64px;
   box-sizing: border-box;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  margin-right: 45px;
+  padding: 10px 40px;
 }
 .gallery-navigation{
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 21px;
 }
 
 .gallery-navigation__link{
@@ -343,6 +346,7 @@ img {
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 4px;
 }
 .gallery-navigation__link:hover{
   background-color: rgba(248, 247, 244, 0.4);
@@ -390,29 +394,37 @@ img {
   font-size: 35px;
   line-height: 1.171;
   margin: 0;
-  padding: 20px;
+  padding: 17px 20px 0;
 }
 
 .banner__text {
   font-size: 18px;
   line-height: 1.222;
   padding: 0 20px;
+  margin-top: 16px;
 }
 
 .banner__link {
   font-size: 18px;
   line-height: 1.333;
   display: inline-block;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 1px;
 }
 
 .icecream-item__price {
-  font-size: 38px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 1;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
   text-align: left;
   position: absolute;
-  top: calc(90% - 38px);
+  top: calc(90% - 36px);
+}
+.icecream-item__kilo-title{
+  font-size: 30px;
+  padding-left: 4px;
 }
 
 .icecream-item__hit {
@@ -430,9 +442,8 @@ img {
   background-color: #ebddbf;
   background-image: url("../img/waffle-pattern.png");
   border-radius: 15px;
-  padding: 30px 0;
-  margin: 0;
-  margin-bottom: 40px;
+  padding: 25px 0;
+  margin: 4px 4px 30px 0;
 }
 
 .block-about__title {
@@ -467,14 +478,17 @@ img {
 .subscribe__content {
   color: #5A5A5A;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
+}
+.subscribe-email-input{
+  width: 368px;
 }
 
 .text-input, .textarea {
   color: #323232;
   font-weight: 700;
   line-height: 1.5;
-  padding-left: 15px;
+  padding-left: 13px;
   border: 1px solid #D3D3D2;
   border-radius: 5px;
   background-color: #fff;
@@ -512,6 +526,7 @@ img {
   position: absolute;
   left: -20px;
   top: 1px;
+  transform: scale(1.3);
 }
 .made-by-info{
   margin-top: 15px;
@@ -522,12 +537,16 @@ img {
   line-height: 1.5;
   margin: 3px 0 0;
   min-width: 200px;
+  position: relative;
+  right: -10px;
+  bottom: 1px;
 }
 
 .catalog-title {
   font-size: 35px;
   font-weight: 700;
   line-height: 1.171;
+  margin-top: 0;
 }
 
 .navigation-route__item {
@@ -536,7 +555,7 @@ img {
 }
 .navigation-route__link::after{
   content: "»";
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .cart-total-price {
@@ -618,7 +637,8 @@ transform: rotate(-45deg);
 
 .htmlacademy-link {
   position: relative;
-  left: -3px;
+  left: 8px;
+  top: 2px;
 }
 
 .user-navigation__link,
@@ -629,7 +649,7 @@ transform: rotate(-45deg);
 
 .main-header {
   margin: 0 0;
-  padding: 10px 0;
+  padding: 7px 5px 7px 0;
 }
 
 .main-navigation {
@@ -659,9 +679,16 @@ transform: rotate(-45deg);
   margin: 0;
   text-align: right;
 }
+.short-info__phone-number{
+  margin-right: -2px;
+}
 
 .short-info__working-hours {
-  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  margin-bottom: 5px;
+  margin-right: -1px;
 }
 
 .user-navigation__item {
@@ -681,20 +708,27 @@ transform: rotate(-45deg);
   color: #323232;
   width: 48.9%;
   position: relative;
-  padding-left: 60px;
-  padding-top: 15px;
+  padding-left: 56px;
+  padding-top: 12px;
   box-sizing: border-box;
 }
 
 .block-about__item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+.block-about__item:nth-child(3),
+.block-about__item:nth-child(4){
+  margin-top: 11px;
+}
+.block-about__item:nth-child(2n){
+  padding-left: 58px;
 }
 
 .block-about__item--icecream::before {
@@ -716,10 +750,11 @@ transform: rotate(-45deg);
 .two-columns{
   display: flex;
   justify-content: space-between;
-  padding: 10px 0 30px;
+  padding: 10px 5px 40px 0;
 }
 .two-columns__column{
   flex-basis: 48.9%;
+  max-width: 48.9%;
   border-radius: 15px;
 }
 .blog-news{
@@ -741,22 +776,26 @@ transform: rotate(-45deg);
 .subscribe{
   background-color: #f8f7f4;
   background-image: repeating-linear-gradient(135deg, #f8f7f4 0px, #f8f7f4 8px, #98c9ee 8px, #98c9ee 16px, #f8f7f4 16px, #f8f7f4 24px, #fea092 24px, #fea092 32px);
+  margin-right: -2px;
 }
 .subscribe-content-wrapper{
-  margin: 8px;
+  margin: 6px;
   background-color: #f8f7f4;
   border-radius: 15px;
-  padding: 30px 20px;
+  padding: 28px 18px 30px 20px;
   min-height: 204px;
   box-sizing: border-box;
 }
 
 .subscribe__button{
-  margin-right: 0;
+  margin-right: 2px;
   margin-left: auto;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .subscribe-elements-wrapper{
   display: flex;
+  margin-bottom: 6px;
 }
 .temporary-hidden{
   display: none;
@@ -779,6 +818,8 @@ transform: rotate(-45deg);
   flex-wrap: wrap;
   justify-content: center;
   min-width: 400px;
+  margin-right: 71px;
+  margin-bottom: 5px;
 }
 .other-links__item{
   box-sizing: content-box;
@@ -790,8 +831,13 @@ transform: rotate(-45deg);
 .other-links__item:nth-child(2n+1){
   text-align: right;
 }
+.other-links__item:nth-child(2n+1) .other-links__link{
+  margin-right: 7px;
+}
+
 .social-links{
   display: flex;
+  margin-bottom: 7px;
 }
 .social-links__link{
   border-radius: 50%;
@@ -834,12 +880,15 @@ transform: rotate(-45deg);
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+.icecreams-catalog{
+  margin-bottom: 45px;
+}
 .icecream-item{
   width: 23.3%;
   text-align: center;
   position: relative;
-  margin-bottom: 35px;
-  margin-right: 2.22%;
+  margin-bottom: 39px;
+  margin-right: 2.1%;
 }
 .icecream-item:nth-child(4n){
   margin-right: 0;
@@ -873,13 +922,17 @@ transform: rotate(-45deg);
   height: 100%;
   width: 100%;
 }
-
+.catalog-navigation-container{
+  margin-bottom: 28px;
+}
 .catalog-navigation{
   display: flex;
   justify-content: flex-end;
+  font-size: 17px;
+  line-height: 1.375;
 }
 .catalog-navigation__item{
-  margin: 0 2px;
+  margin: 0 4px;
   width: 20px;
   height: 20px;
   text-align: center;
@@ -888,6 +941,13 @@ transform: rotate(-45deg);
   background-color: #fff;
   color: #000;
   border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
 }
 .link-back,
 .link-forward{
@@ -896,13 +956,13 @@ transform: rotate(-45deg);
 .link-back::before,
 .link-forward::before{
    content: "";
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   display: block;
   border-bottom: solid 1px #fff;
   border-left: solid 1px #fff;
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 0;
  }
 .link-back::before{
@@ -910,7 +970,6 @@ transform: rotate(-45deg);
 }
 .link-forward::before{
   transform: rotate(-135deg);
-  left: -5px;
 }
 .link-inactive::before{
   border-bottom: solid 1px rgba(255, 255, 255, 0.5);
@@ -918,8 +977,10 @@ transform: rotate(-45deg);
 }
 
 .icecream-item__text{
-  font-size: 16px;
   display: inline;
+  font-size: 16px;
+  line-height: 1.375;
+  padding-left: 10px;
 }
 .icecream-button{
   display: inline-block;
@@ -932,12 +993,16 @@ transform: rotate(-45deg);
 
 .navigation-route{
   display: flex;
+  margin-top: 19px;
+  padding-left: 0;
+  margin-left: -1px;
+  margin-bottom: 5px;
 }
 .map{
   height: 430px;
   min-width: 900px;
   text-align: center;
-  margin: 0 -2.22%;
+  margin: 0 -2.1%;
   background-color: #aacbd9;
 }
 .map-container{
@@ -960,11 +1025,11 @@ transform: rotate(-45deg);
   background-color: #fff;
   color: #323232;
   text-align: left;
-  padding: 30px 25px;
+  padding: 29px 25px;
   min-width: 305px;
   min-height: 305px;
   box-sizing: border-box;
-  margin-right: 2.22%;
+  margin-right: 2.1%;
   margin-top: 5%;
 }
 .feedback-form__address-title,
@@ -980,8 +1045,14 @@ transform: rotate(-45deg);
   color: #323232;
   font-weight: 700;
 }
+.feedback-form__address--first-line{
+  margin-top: 3px;
+}
+.feedback-form__phone{
+  margin-top: 5px;
+}
 .feedback-form__orders-title{
-  margin-top: 20px;
+  margin-top: 17px;
 }
 .feedback-form__address-title,
 .feedback-form__extra,
@@ -992,7 +1063,11 @@ transform: rotate(-45deg);
 .feedback-button{
   display: block;
   float: right;
-  margin-top: 28px;
+  margin-top: 26px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 28px;
+  padding-top: 9px;
 }
 
 @media (max-width: 900px) {
@@ -1010,7 +1085,7 @@ transform: rotate(-45deg);
   min-width: 900px;
 }
 .banners{
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .banner--left-banner{
   background: #4b0a17 url("../img/raspberry.png") repeat bottom;
@@ -1029,6 +1104,7 @@ transform: rotate(-45deg);
 }
 .icecream-img-wrapper{
   position: relative;
+  margin-bottom: 7px;
 }
 .icecream-item:hover .icecream-item__text,
 .icecream-item:hover .icecream-img-wrapper{
@@ -1211,9 +1287,10 @@ transform: rotate(-45deg);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   border: none;
-  padding: 10px 25px;
+  padding: 10px 28px;
   display: table-cell;
   vertical-align: middle;
+  margin-bottom: -2px;
 }
 .filter-button:hover{
   background-color: #fff;
@@ -1225,14 +1302,15 @@ transform: rotate(-45deg);
   box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.4);
 }
 .catalog-filter{
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 .filter-label{
   font-size: 14px;
   line-height: 1.143;
   display: block;
   margin-bottom: 5px;
-  margin-left: 13px;
+  margin-left: 15px;
+  margin-top: 2px;
 }
 .filter-row{
   display: flex;
@@ -1250,18 +1328,20 @@ transform: rotate(-45deg);
 
 }
 .filter-section{
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .sort-field{
+  height: 36px;
   border: none;
   position: relative;
   color: #fff;
-  padding-right: 28px;
+  padding-right: 34px;
+  padding-left: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
 
   background-image: linear-gradient(65deg, transparent 50%, #fff 50%), linear-gradient(115deg, #fff 50%, transparent 50%);
-  background-position: right 15px center, right 10px center;
+  background-position: right 20px center, right 15px center;
   background-size: 6px 10px, 6px 10px;
   background-repeat: no-repeat;
 }
@@ -1281,9 +1361,15 @@ transform: rotate(-45deg);
 .filler-checkbox__label,
 .fat-radio-button__label{
   position: relative;
-  margin-left: 40px;
-  margin-right: 10px;
   max-width: 60px;
+}
+.fat-radio-button__label{
+  margin-left: 43px;
+  margin-right: 3px;
+}
+.filler-checkbox__label{
+  margin-left: 38px;
+  margin-right: 12px;
 }
 .filler-checkbox__label::before{
   content: "";
@@ -1291,8 +1377,8 @@ transform: rotate(-45deg);
   width: 24px;
   height: 20px;
   position: absolute;
-  top: 0;
-  left: -34px;
+  top: 1px;
+  left: -31px;
   opacity: 0.8;
 }
 .filler-checkbox:checked + .filler-checkbox__label::before{
@@ -1317,24 +1403,24 @@ transform: rotate(-45deg);
   margin-left: 0;
 }
 .fat-radio-button__label::before{
-   content: "";
-   width: 22px;
-   height: 22px;
-   position: absolute;
-   top: -2px;
-   left: -34px;
-   border-radius: 50%;
-   display: block;
-   box-sizing: border-box;
-   border: solid 4px rgba(255, 255, 255, 0.8);
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -1px;
+  left: -31px;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  border: solid 4px rgba(255, 255, 255, 0.8);
  }
 .fat-radio-button__label::after{
   content: "";
   width: 8px;
   height: 8px;
   position: absolute;
-  top: 5px;
-  left: -27px;
+  top: 6px;
+  left: -24px;
   border-radius: 50%;
   display: none;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1355,21 +1441,26 @@ transform: rotate(-45deg);
 .fat-radio-button:disabled + .fat-radio-button__label::before{
   border-color: rgba(255, 255, 255, 0.4);
 }
+.fat-field{
+  padding-left: 0;
+  padding-right: 14px;
+}
 .range-controls{
   width: 220px;
   height: 36px;
   box-sizing: border-box;
   position: relative;
 }
-.range-controls .scale {
+.scale {
   height: 4px;
-
+  margin-left: 10px;
+  margin-right: 10px;
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 60%;
-  margin-left: 10%;
+  width: 55%;
+  margin-left: 15%;
   height: 4px;
 
   background: #ffffff;
@@ -1393,7 +1484,7 @@ transform: rotate(-45deg);
 }
 
 .range-toggle-min {
-  left: 10%;
+  left: 15%;
 }
 
 .range-toggle-max {
@@ -1474,5 +1565,10 @@ transform: rotate(-45deg);
 }
 .error-form{
   animation: shake 0.6s;
-
+}
+.social-links__item{
+  margin-right: 3px;
+}
+.home-link{
+  margin-bottom: -4px;
 }

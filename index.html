@@ -102,15 +102,15 @@
     <div class="gallery-wrapper">
       <ul class="gallery reset-list">
         <li class="gallery__content page-1-content">
-          <h2 class="galery__title">Крем-брюле и пломбир с малиновым джемом</h2>
+          <h2 class="gallery__title">Крем-брюле и пломбир с малиновым джемом</h2>
           <a href="#" class="gallery__link button">Давайте оба!</a>
         </li>
         <li class="gallery__content page-2-content">
-          <h2 class="galery__title">Шоколадный пломбир и лимонный сорбет</h2>
+          <h2 class="gallery__title">Шоколадный пломбир и лимонный сорбет</h2>
           <a href="#" class="gallery__link button">Давайте оба!</a>
         </li>
         <li class="gallery__content page-3-content">
-          <h2 class="galery__title">Пломбир с помадкой и клубничный щербет</h2>
+          <h2 class="gallery__title">Пломбир с помадкой и клубничный щербет</h2>
           <a href="#" class="gallery__link button">Давайте оба!</a>
         </li>
       </ul>
@@ -148,7 +148,7 @@
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream1.png" width="267" height="267"
                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <div class="icecream-item__price">310₽/кг</div>
+            <div class="icecream-item__price">310₽<span class="icecream-item__kilo-title">/кг</span></div>
           </div>
           <h2 class="icecream-item__text underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
         <div class="icecream-item__extra">
@@ -161,7 +161,7 @@
           <div class="icecream-img-wrapper">
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <div class="icecream-item__price">380₽/кг</div>
+            <div class="icecream-item__price">380₽<span class="icecream-item__kilo-title">/кг</span></div>
           </div>
           <h2 class="icecream-item__text underline">Сливочно-кофейное с кусочками шоколада</h2>
         <div class="icecream-item__extra">
@@ -175,7 +175,7 @@
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream3.png" width="267" height="267"
                alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <div class="icecream-item__price">355₽/кг</div>
+            <div class="icecream-item__price">355₽<span class="icecream-item__kilo-title">/кг</span></div>
           </div>
           <h2 class="icecream-item__text underline">Сливочно-клубничное с присыпкой из белого шоколада</h2>
         <div class="icecream-item__extra">
@@ -188,7 +188,7 @@
           <div class="icecream-img-wrapper">
             <mark class="icecream-item__hit"><span class="visually-hidden">Хит</span></mark>
             <img src="img/icecream4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <div class="icecream-item__price">415₽/кг</div>
+            <div class="icecream-item__price">415₽<span class="icecream-item__kilo-title">/кг</span></div>
           </div>
           <h2 class="icecream-item__text underline">Сливочное крем-брюле с карамельной подливкой</h2>
         <div class="icecream-item__extra">
@@ -206,12 +206,12 @@
         <li class="block-about__item block-about__item--icecream">Все наше мороженое изготавливается на собственном
           производстве, с использованием современного оборудования и проверенных временем технологий.
         </li>
-        <li class="block-about__item block-about__item--cow">Для приготовления мороженого используются настоящие
+        <li class="block-about__item block-about__item--cow">Закупка ингредиентов производится только у проверенных
+          фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+        </li>
+        <li class="block-about__item block-about__item--leaf">Для приготовления мороженого используются настоящие
           сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,
           экологически чистого сырья.
-        </li>
-        <li class="block-about__item block-about__item--leaf">Закупка ингредиентов производится только у проверенных
-          фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
         </li>
         <li class="block-about__item block-about__item--temperature">Доставка нашего мороженого до заказчиков
           осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить
@@ -236,7 +236,7 @@
             <p class="subscribe__content">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
               вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
             <div class="subscribe-elements-wrapper">
-              <input id="subscribe-email" name="email" type="email" required placeholder="Электронная почта" class="text-input">
+              <input id="subscribe-email" name="email" type="email" required placeholder="Электронная почта" class="text-input subscribe-email-input">
               <button type="submit" class="button subscribe__button">Отправить</button>
             </div>
           </form>
@@ -251,7 +251,7 @@
       <div class="feedback-form">
         <p class="feedback-form__address-title">Адрес главного офиса</p>
         <p class="feedback-form__address-title"> и офлайн-магазина:</p>
-        <p class="feedback-form__address">ул. Большая Конюшенная</p>
+        <p class="feedback-form__address feedback-form__address--first-line">ул. Большая Конюшенная</p>
         <p class="feedback-form__address">19/8, Санкт-Петербург</p>
         <p class="feedback-form__orders-title">Для заказов по телефону:</p>
         <p class="feedback-form__phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
