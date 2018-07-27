@@ -134,11 +134,15 @@
     if (element) {
       clearInputs(element);
       element.classList.add("modal");
+      element.classList.add("slide-in");
       let firstInput = element.querySelector("input,textarea");
       firstInput.focus();
       if(showBlackout && blckoutElement){
         blckoutElement.classList.remove("temporary-hidden");
       }
+      setTimeout(function () {
+        element.classList.remove("slide-in");
+      },1000);
     }
   }
 }());

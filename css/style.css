@@ -1445,13 +1445,11 @@ transform: rotate(-45deg);
     transform: translateY(2000px);
   }
 }
-.modal {
-  animation-name: slide-in;
-  animation-duration: 0.6s;
+.slide-in {
+  animation: slide-in 0.6s;
 }
 .slide-out{
-  animation-name: slide-out;
-  animation-duration: 0.7s;
+  animation: slide-out 0.7s;
 }
 @keyframes shake {
   0%,
@@ -1475,6 +1473,6 @@ transform: rotate(-45deg);
   }
 }
 .error-form{
-  animation-name: shake;
-  animation-duration: 0.6s;
+  animation: shake 0.6s;
+
 }
