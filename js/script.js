@@ -31,7 +31,7 @@
   }
 
   let feedbackButtonCloseButton = document.querySelector(".feedback-panel-close-button");
-  if(feedbackButtonCloseButton){
+  if (feedbackButtonCloseButton) {
     feedbackButtonCloseButton.addEventListener("click", function (event) {
       event.preventDefault();
       event.stopPropagation();
@@ -40,8 +40,8 @@
   }
 
   let forms = document.querySelectorAll("form");
-  if(forms){
-    for(let i = 0; i < forms.length; i++){
+  if (forms) {
+    for (let i = 0; i < forms.length; i++) {
       addFormValidation(forms[i]);
     }
   }
@@ -53,8 +53,8 @@
 
   function addFormValidation(form) {
     let formInputs = form.querySelectorAll("input[type='text'],input[type='email'],input[type='search'],input[type='password']");
-    if(formInputs){
-      for(let i = 0; i < formInputs.length; i++){
+    if (formInputs) {
+      for (let i = 0; i < formInputs.length; i++) {
         formInputs[i].addEventListener("keydown", function (event) {
           if (event.keyCode === 27) {
             validateForm(form);
@@ -71,8 +71,9 @@
       }
     }
   }
+
   function validateForm(form) {
-    if(!form.checkValidity()){
+    if (!form.checkValidity()) {
       let panel = form.parentElement;
       panel.classList.add("error-form");
       setTimeout(function () {
@@ -86,12 +87,12 @@
     if (!modal) {
       return;
     }
-    if(event){
-      if(!clickedOutside(event)){
+    if (event) {
+      if (!clickedOutside(event)) {
         return;
       }
     }
-    if(blckoutElement && !blckoutElement.classList.contains("temporary-hidden")){
+    if (blckoutElement && !blckoutElement.classList.contains("temporary-hidden")) {
       blckoutElement.classList.add("temporary-hidden");
     }
     modal.classList.add("slide-out");
@@ -103,12 +104,12 @@
   }
 
   function clearInputs(modalElement) {
-    if(!modalElement){
+    if (!modalElement) {
       return;
     }
     let inputs = modalElement.querySelectorAll("input,textarea");
-    if(inputs){
-      for (let i=0; i < inputs.length; i++) {
+    if (inputs) {
+      for (let i = 0; i < inputs.length; i++) {
         inputs[i].value = "";
       }
     }
@@ -118,7 +119,7 @@
     return getParentWithClass(event.target, "modal") == null;
   }
 
-  function getParentWithClass(node, className){
+  function getParentWithClass(node, className) {
     while (node) {
       if (node.classList.contains(className)) return node;
       else node = node.parentElement;
@@ -130,19 +131,19 @@
     event.preventDefault();
     event.stopPropagation();
     closeActiveModalElement();
-    let element = document.querySelector("."+className);
+    let element = document.querySelector("." + className);
     if (element) {
       clearInputs(element);
       element.classList.add("modal");
       element.classList.add("slide-in");
       let firstInput = element.querySelector("input,textarea");
       firstInput.focus();
-      if(showBlackout && blckoutElement){
+      if (showBlackout && blckoutElement) {
         blckoutElement.classList.remove("temporary-hidden");
       }
       setTimeout(function () {
         element.classList.remove("slide-in");
-      },1000);
+      }, 1000);
     }
   }
 }());
