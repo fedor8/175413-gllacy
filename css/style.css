@@ -5,11 +5,11 @@ body{
   line-height: 1.375;
   color: #fff;
 }
-.site-wrapper {
-  background-color: #849d8f;
-}
 .index-page .site-wrapper{
   background: #849d8f url("../img/gallery-slide1.png") no-repeat top center;
+}
+.catalog-page{
+  background-image: linear-gradient(to bottom, rgba(132, 157, 143, 0.8), rgba(132, 157, 143, 1));
 }
 .site-wrapper{
   min-width: 900px;
