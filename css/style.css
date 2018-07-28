@@ -433,10 +433,10 @@ img {
 .subscribe__content {
   color: #5A5A5A;
   margin: 0;
-  margin-bottom: 38px;
 }
 .subscribe-email-input{
   width: 368px;
+  margin-right: 11px;
 }
 .text-input, .textarea {
   color: #323232;
@@ -706,7 +706,10 @@ transform: rotate(-45deg);
   background-color: #f8f7f4;
   border-radius: 15px;
   padding: 28px 18px 30px 20px;
-  min-height: 204px;
+  min-height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-sizing: border-box;
 }
 .subscribe__button{
@@ -717,7 +720,7 @@ transform: rotate(-45deg);
 }
 .subscribe-elements-wrapper{
   display: flex;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 .temporary-hidden{
   display: none;
