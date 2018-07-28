@@ -370,9 +370,7 @@ img {
   font-size: 18px;
   line-height: 1.333;
   display: inline-block;
-  padding-left: 23px;
-  padding-right: 23px;
-  margin-bottom: 1px;
+  padding: 10px 23px 12px;
 }
 .icecream-item__price {
   font-size: 45px;
@@ -1000,6 +998,7 @@ transform: rotate(-45deg);
 }
 .banner--right-banner{
   background: #3c2317 url("../img/chocolate.png") repeat bottom;
+  margin-right: -2px;
 }
 .banner{
   display: flex;
@@ -1009,6 +1008,7 @@ transform: rotate(-45deg);
   margin-top: auto;
   align-self: flex-end;
   padding-right: 20px;
+  margin-bottom: 3px;
 }
 .icecream-img-wrapper{
   position: relative;
