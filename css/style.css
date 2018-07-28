@@ -379,7 +379,7 @@ img {
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
   text-align: left;
   position: absolute;
-  top: calc(90% - 36px);
+  top: calc(100% - 65px);
 }
 .icecream-item__kilo-title{
   font-size: 30px;
@@ -474,8 +474,8 @@ img {
 .other-links__item--suppliers .other-links__link::before {
   content: "";
   position: absolute;
-  left: -21px;
-  top: 1px;
+  left: -23px;
+  top: 0;
   display: block;
   background: url(../img/heart.png) no-repeat center;
   width: 16px;
@@ -910,7 +910,7 @@ transform: rotate(-45deg);
   height: 430px;
   min-width: 900px;
   text-align: center;
-  margin: 0 -2.1%;
+  margin: -2px -2.1% 4px;
   background-color: #aacbd9;
 }
 .map-container{
@@ -937,8 +937,8 @@ transform: rotate(-45deg);
   min-width: 305px;
   min-height: 305px;
   box-sizing: border-box;
-  margin-right: 2.1%;
-  margin-top: 5%;
+  margin-right: 2.2%;
+  margin-top: 5.4%;
 }
 .feedback-form__address-title,
 .feedback-form__address,
@@ -977,13 +977,25 @@ transform: rotate(-45deg);
   padding-left: 28px;
   padding-top: 9px;
 }
-@media (max-width: 900px) {
+.map-img--900{
+  display: none;
+}
+@media (max-width: 920px) {
   .iframe-map{
   	position: absolute;
   	left: 0;
   }
   .map{
   	width: 900px;
+  }
+  .map-img--1200{
+    display: none;
+  }
+  .map-img--900{
+    display: block;
+  }
+  .feedback-form{
+    margin-top: 62px;
   }
 }
 .iframe-map{
