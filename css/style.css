@@ -1116,8 +1116,8 @@ transform: rotate(-45deg);
   opacity: 1;
   color: #999999;
   font-size: 14px;
-  line-height: 1.736;
   font-weight: 300;
+  line-height: 40px;
 }
 :-ms-input-placeholder{
   opacity: 1;
@@ -1126,13 +1126,6 @@ transform: rotate(-45deg);
   line-height: 1;
   font-weight: 300;
   padding-bottom: 2px;
-}
-::-moz-placeholder {
-  opacity: 1;
-  color: #999999;
-  font-size: 14px;
-  line-height: 1.736;
-  font-weight: 300;
 }
 .login__submit-button,
 .icecream-button,
