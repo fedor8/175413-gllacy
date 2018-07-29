@@ -1008,6 +1008,9 @@ transform: rotate(-45deg);
   .icecream-item{
     margin-bottom: 36px;
   }
+  .block-about{
+    padding-bottom: 28px;
+  }
 }
 .iframe-map{
   width: 100%;
