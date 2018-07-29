@@ -1258,7 +1258,7 @@ transform: rotate(-45deg);
   color: #fff;
   padding-right: 34px;
   padding-left: 15px;
-  padding-top: 6px;
+  padding-top: 11px;
   -webkit-appearance: none;
   -moz-appearance: none;
 
@@ -1266,6 +1266,11 @@ transform: rotate(-45deg);
   background-position: right 20px center, right 15px center;
   background-size: 6px 10px, 6px 10px;
   background-repeat: no-repeat;
+}
+@-moz-document url-prefix() {
+  .sort-field {
+    padding-top: 6px;
+  }
 }
 .sort-field::-ms-expand {
   display: none;
