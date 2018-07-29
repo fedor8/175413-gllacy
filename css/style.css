@@ -1193,6 +1193,7 @@ transform: rotate(-45deg);
 .cart-row-product-image{
   height: 33px;
   margin: 0 10px;
+  border-radius: 50%;
 }
 .cart-price-and-weight{
   width: 120px;
