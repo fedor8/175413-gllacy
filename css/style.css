@@ -413,7 +413,7 @@ img {
 }
 .block-about {
   background-color: #ebddbf;
-  background-image: url("../img/waffle-pattern.png");
+  background-image: url("../img/waffle-pattern.jpg");
   border-radius: 15px;
   padding: 25px 0;
   margin: 0 4px 30px 0;
@@ -697,7 +697,7 @@ transform: rotate(-45deg);
   border-radius: 15px;
 }
 .blog-news{
-  background: #fff url("../img/icecream-background.png") no-repeat right bottom;
+  background: #fff url("../img/icecream-background.jpg") no-repeat right bottom;
   min-height: 220px;
 }
 .blog-news__main-content,
@@ -1028,10 +1028,10 @@ transform: rotate(-45deg);
   margin-top: 30px;
 }
 .banner--left-banner{
-  background: #4b0a17 url("../img/raspberry.png") repeat bottom;
+  background: #4b0a17 url("../img/raspberry.jpg") repeat bottom;
 }
 .banner--right-banner{
-  background: #3c2317 url("../img/chocolate.png") repeat bottom;
+  background: #3c2317 url("../img/chocolate.jpg") repeat bottom;
   margin-right: -2px;
 }
 .banner{
@@ -1500,4 +1500,7 @@ transform: rotate(-45deg);
 }
 .home-link{
   margin-bottom: -4px;
+}
+.icecream-image{
+  border-radius: 50%;
 }
