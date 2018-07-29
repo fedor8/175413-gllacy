@@ -90,6 +90,10 @@ img {
   background-image: linear-gradient( to top, #F26843 0%, #CA3824 100%);
   box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.4);
 }
+.logo{
+  width:154px;
+  height: 64px;
+}
 .main-menu__item {
   margin-left: 27px;
   position: relative;
@@ -122,9 +126,9 @@ img {
   height: 16px;
   position: relative;
 }
-.submenu__header:hover ~ .catalog-menu,
-.submenu__header:focus ~ .catalog-menu,
-.submenu__header:active ~ .catalog-menu,
+.main-menu__link:hover ~ .catalog-menu,
+.main-menu__link:focus ~ .catalog-menu,
+.main-menu__link:active ~ .catalog-menu,
 .catalog-menu:hover{
   display: block;
 }
@@ -132,34 +136,35 @@ img {
   display: inline-block;
   vertical-align: middle;
 }
-.submenu__header{
+.main-menu__link{
   padding-left: 15px;
   padding-right: 15px;
 }
-.submenu__header:hover,
-.submenu__header:focus,
-.submenu__header:active,
-.submenu__header.current-page{
+.main-menu__link:hover,
+.main-menu__link:focus,
+.main-menu__link:active,
+.main-menu__link.current-page{
   font-weight: 700;
   line-height: 1.143;
   border-radius: 16px;
   background-color: #fff;
 }
-.submenu__header.current-page{
+.main-menu__link.current-page{
   background-color: #d07058;
   color: #fff;
 }
-.submenu__header:hover .underline,
-.submenu__header:focus .underline,
-.submenu__header:active .underline{
+.main-menu__link:hover .underline,
+.main-menu__link:focus .underline,
+.main-menu__link:active .underline{
   background-image: none;
   color: #323232;
 }
-.submenu__header:active{
+.main-menu__link:active{
   box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.4);
 }
-.submenu__header-item{
-  margin-right: -10px;
+.main-menu__item{
+  margin-left: 11px;
+  margin-right: -13px;
 }
 .catalog-menu__link[href]:hover,
 .catalog-menu__link[href]:focus {
