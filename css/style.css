@@ -1005,6 +1005,9 @@ transform: rotate(-45deg);
   .feedback-form{
     margin-top: 62px;
   }
+  .icecream-item{
+    margin-bottom: 36px;
+  }
 }
 .iframe-map{
   width: 100%;
