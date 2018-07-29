@@ -95,12 +95,13 @@ img {
   height: 64px;
 }
 .main-menu__item {
-  margin-left: 27px;
+  margin-left: 14px;
+  margin-right: -10px;
   position: relative;
 }
 .main-menu__item:nth-child(1){
-  margin-left: 8px;
-  margin-right: -13px;
+  margin-left: 11px;
+  margin-right: -10px;
 }
 .main-menu__link {
   font-weight: 700;
@@ -148,8 +149,8 @@ img {
   display: block;
 }
 .main-menu__link{
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .main-menu__link:hover,
 .main-menu__link:focus,
@@ -172,10 +173,6 @@ img {
 }
 .main-menu__link:active{
   box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.4);
-}
-.main-menu__item{
-  margin-left: 11px;
-  margin-right: -13px;
 }
 .catalog-menu__link[href]:hover,
 .catalog-menu__link[href]:focus {
