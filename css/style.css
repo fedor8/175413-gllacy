@@ -132,9 +132,20 @@ img {
 .catalog-menu:hover{
   display: block;
 }
-.catalog-menu--visible {
-  display: inline-block;
-  vertical-align: middle;
+.panel::before{
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  top: -11px;
+}
+.user-navigation__link:hover ~ .panel,
+.user-navigation__link:focus ~ .panel,
+.user-navigation__link:active ~ .panel,
+.panel:hover{
+  display: block;
 }
 .main-menu__link{
   padding-left: 15px;

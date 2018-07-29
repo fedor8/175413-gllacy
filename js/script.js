@@ -2,7 +2,7 @@
   "use strict";
   let blckoutElement = document.querySelector(".modal-blackout");
 
-  let searchButton = document.querySelector(".search-button");
+/*  let searchButton = document.querySelector(".search-button");
   if (searchButton) {
     searchButton.addEventListener("click", function (event) {
       showModalElement(event, "search-panel");
@@ -21,7 +21,7 @@
     cartButton.addEventListener("click", function (event) {
       showModalElement(event, "cart-panel");
     });
-  }
+  }*/
 
   let feedbackButton = document.querySelector(".feedback-button");
   if (feedbackButton) {
